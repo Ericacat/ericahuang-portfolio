@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BizCHINA - Erica Huang</title>
+<title>BizCHINA - Joting Huang</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -18,11 +18,11 @@
 
 <!-- Project Header -->
 <section class="project-header">
-    <h1 class="project-title-large">BizCHINA<br>Education Platform</h1>
+    <h1 class="project-title-large">BizCHINA<br>Learning Platform</h1>
 
     <p class="project-intro">
-        I redesigned an online platform for learning business Chinese.<br>
-        I handled both design and Vue.js coding. The result was a fresh new look and a more efficient system.
+        I led the full redesign of a business Chinese learning platform — from onboarding and design system to frontend rebuild and platform integration.<br>
+        The work improved sign-up rates, reduced development costs, and built a system that could scale to new products.
     </p>
 
     <div class="project-meta-grid">
@@ -57,65 +57,59 @@
     <div class="section-title">Challenge</div>
     <h2>Challenges</h2>
 
-    <h3>1. The Old Design Did Not Look Modern</h3>
-    <p>The old site looked outdated. It did not match what users expect from a modern online school. This hurt the brand and made it hard to get new users.</p>
+    <h3>1. The outdated brand was hurting sign-ups</h3>
+    <p>The old site looked out of date compared to modern online learning platforms. This was hurting the brand's first impression and making it harder to get new users to sign up.</p>
 
-    <h3>2. The Old System Was Hard to Update</h3>
-    <p>The old system cost a lot of time and money to update. Every small change took too much work. This was a big problem for the team.</p>
+    <h3>2. The old system was slowing down product growth</h3>
+    <p>The original system had too much technical debt. Every time we added a new feature, it took more time and money than it should. The old architecture was holding the product back.</p>
 
-    <h3>3. Too Many Outside Tools</h3>
-    <p>The team used outside tools for classes and teacher communication. It was hard to track attendance or manage lessons well. It also cost more money.</p>
+    <h3>3. Too many separate tools were making operations messy</h3>
+    <p>Classes, teacher communication, and attendance tracking all used different outside tools. Information was scattered, and it was hard to get a clear picture of how the platform was running. Bringing everything into one place was a priority.</p>
 </section>
 
 <!-- Solution 1 -->
 <section class="content-section">
     <div class="section-title">Solution 1</div>
-    <h2>Brand Refresh & UI/UX Improvement</h2>
+    <h2>Brand Rebuild & Better Sign-Up Flow</h2>
 
-    <p>We updated the whole visual design and improved the user experience.</p>
+    <p>The main problems were trust and friction — users weren't confident enough to sign up. I worked on the design system and the onboarding flow at the same time to fix both.</p>
 
     <div class="subsection">
-        <h3>1-1. New Visual Design</h3>
+        <h3>1-1. Design System</h3>
 
-        <p><strong>What we did:</strong></p>
-        <ul>
-            <li>Updated all brand colors and fonts</li>
-            <li>Built a modern and friendly design system</li>
-            <li>Made the whole site look consistent</li>
-        </ul>
+        <p>Instead of just updating the look, I built a design system that could support future features and new products — not just the current redesign.</p>
 
         <div class="full-width-image">
             <img src="images/bizchina_design.png">
         </div>
 
-        <p><strong>Results:</strong></p>
         <ul>
-            <li>The site now looks modern</li>
-            <li>The design is consistent across all pages</li>
-            <li>The design system makes it easy to add new features</li>
+            <li>Rebuilt the visual style (colors, fonts, components) to make the platform look trustworthy and modern</li>
+            <li>Organized design components so adding new features takes less design work</li>
+            <li>Built a shared foundation that made it possible to launch NetKOREA later</li>
         </ul>
     </div>
 
     <div class="subsection">
-        <h3>1-2. Simpler Sign-Up Flow</h3>
+        <h3>1-2. Onboarding Flow Redesign</h3>
 
-        <h4>Problem</h4>
-        <p>After the redesign, more users signed up for a free trial. But not many became paying members. The 5-step sign-up process was too long and stopped users from finishing.</p>
+        <h4>The Problem</h4>
+        <p>After the redesign, more users started free trials. But not many became paying members. The 5-step sign-up process was too long — users were dropping out before they finished.</p>
 
-        <h4>What Each Person Wanted</h4>
+        <h4>What Each Stakeholder Wanted</h4>
+        <p>Three groups had different goals. My job was to find a solution that worked for all of them.</p>
         <ul>
-            <li><strong>Management:</strong> Show the price clearly at the start</li>
-            <li><strong>Japanese staff:</strong> Explain all the details to users</li>
-            <li><strong>Users:</strong> Start quickly and easily</li>
+            <li><strong>Management:</strong> Show the price upfront, so only serious users move forward</li>
+            <li><strong>Internal staff:</strong> Make sure users get enough information before signing up</li>
+            <li><strong>Users:</strong> Start quickly without too many steps</li>
         </ul>
 
-        <h4>My Approach</h4>
-        <p>I listened to each person's needs and found a solution that worked for everyone:</p>
+        <h4>What I Did</h4>
         <ul>
-            <li><strong>Reduced from 5 steps to 2 steps</strong></li>
-            <li>Show the price first (for management)</li>
-            <li>Add details in the next steps (less pressure for users)</li>
-            <li>Changed from free trial to a low-cost paid trial (to attract serious users)</li>
+            <li><strong>Reduced from 5 steps to 2</strong> to remove the main drop-off points</li>
+            <li>Put pricing on the first step — users who continue already know the cost</li>
+            <li>Moved detailed information to after sign-up — less to think about at the start</li>
+            <li>Proposed switching from a free trial to a low-cost paid trial — this naturally filtered out users who weren't serious</li>
         </ul>
 
         <div class="full-width-image">
@@ -127,8 +121,8 @@
 
         <div class="highlight-box">
             <h4>Results</h4>
-            <p>✅ Users could start learning faster. More users became paying members.<br>
-               ✅ Customer support questions dropped a lot.</p>
+            <p>✅ Paid sign-ups increased steadily. Onboarding-related support questions dropped a lot.<br>
+               ✅ The paid trial change brought in more committed users and reduced early drop-off.</p>
         </div>
     </div>
 </section>
@@ -136,17 +130,17 @@
 <!-- Solution 2 -->
 <section class="content-section">
     <div class="section-title">Solution 2</div>
-    <h2>Frontend Rebuild & System Update</h2>
+    <h2>Frontend Rebuild & System Improvements</h2>
 
-    <p>We had a 6-person team with no frontend engineer. So I did both design and coding.</p>
+    <p>Our team of 6 had no dedicated frontend engineer, so I handled both design and development. This turned out to be a real advantage — the final product matched the design exactly, with no back-and-forth between teams.</p>
 
     <div class="value-box">
-        <h4>Why This Worked Well</h4>
+        <h4>Why Doing Both Design and Development Helped</h4>
         <ul>
             <li>No gap between design and the final result</li>
-            <li>No need to check the design back and forth</li>
-            <li>The result matched the design exactly</li>
-            <li>Development was faster</li>
+            <li>No need for design QA back-and-forth</li>
+            <li>Much faster from decision to shipped feature</li>
+            <li>Easy to update the design quickly based on user feedback</li>
         </ul>
     </div>
 
@@ -155,13 +149,13 @@
     </div>
 
     <div class="subsection">
-        <h3>Case 1: Responsive Design</h3>
+        <h3>Case 1: One Codebase for All Devices (Responsive Design)</h3>
 
         <h4>Problem</h4>
-        <p>The old site had two separate versions: one for desktop and one for mobile. This took twice as much work to maintain.</p>
+        <p>The old site had two separate versions — one for desktop and one for mobile. Every change had to be done twice. Maintenance was taking up more and more time.</p>
 
-        <h4>Solution</h4>
-        <p>I built a responsive design with Vue.js. One code works for all devices. This saved a lot of time and money.</p>
+        <h4>What I Did</h4>
+        <p>I rebuilt the frontend with Vue.js using a responsive design, so one codebase works on all devices. I planned the breakpoints alongside the visual design to make sure everything matched.</p>
 
         <div class="full-width-image">
             <img src="images/bizchina_rwd.png">
@@ -169,32 +163,31 @@
 
         <h4>Results</h4>
         <ul>
-            <li>Lower development cost (no more duplicate code)</li>
-            <li>Easier to maintain (one codebase)</li>
-            <li>Better experience on mobile</li>
+            <li>No more duplicate development — maintenance became much simpler</li>
+            <li>One codebase made it easier to plan and scope new features</li>
+            <li>Better experience for users on mobile</li>
         </ul>
     </div>
 
     <div class="subsection">
-        <h3>Case 2: Web Classroom System</h3>
+        <h3>Case 2: Building Our Own Web Classroom</h3>
 
         <div class="image-text-section reverse">
             <div>
                 <h4>Problem</h4>
-                <p>The team used outside video tools. It was hard to check who came to class or how lessons were going.</p>
+                <p>We used outside video tools for classes. This meant attendance data and class information were stored outside our platform. Operations had no clear view of what was happening.</p>
 
-                <h4>Solution</h4>
+                <h4>What I Did</h4>
                 <ul>
-                    <li>I designed and built our own web classroom</li>
-                    <li>I connected the video system to an easy-to-use interface</li>
-                    <li>Users had a smooth experience from start to finish</li>
+                    <li>Designed and built our own web classroom interface</li>
+                    <li>Connected the video system with a simple, easy-to-use UI</li>
+                    <li>Brought class data back into the platform so the team could monitor it in real time</li>
                 </ul>
 
                 <h4>Results</h4>
                 <ul>
-                    <li>Less need for outside tools</li>
-                    <li>All lessons are now managed inside the platform</li>
-                    <li>The team can check class status in real time</li>
+                    <li>Class and attendance data is now all in one place — the team has a much clearer view</li>
+                    <li>Reduced costs from outside tools and made managing lessons more efficient</li>
                 </ul>
             </div>
             <div class="section-image">
@@ -215,20 +208,20 @@
         </div>
         <div>
             <h3>Problem</h3>
-            <p>Teachers had to use many different tools just to check their schedule. This was slow and confusing.</p>
+            <p>Teachers had to use many different tools just to check their schedule, find materials, or see student progress. It was slow and easy to miss things.</p>
 
-            <h3>Solution</h3>
+            <h3>What I Did</h3>
             <ul>
-                <li>I designed and built a WeChat Mini Program for teachers using <strong>Vue.js + uni-app</strong></li>
-                <li>Teachers can check schedules, materials, and student progress on their phone</li>
-                <li>Course data is shown in a clear and easy-to-read format</li>
+                <li>Designed and built a WeChat Mini Program for teachers using <strong>Vue.js + uni-app</strong></li>
+                <li>Brought schedule, materials, and student progress into one mobile interface</li>
+                <li>Reorganized how course data was shown, so it matched how teachers actually work</li>
             </ul>
 
             <div class="highlight-box">
                 <h4>Results</h4>
-                <p>✅ Teachers have less work to do<br>
-                ✅ Teachers said: "It's so easy to manage on my phone"<br>
-                ✅ Class preparation became faster</p>
+                <p>✅ Teachers now manage everything in one place — much less work and fewer mistakes<br>
+                ✅ Teachers said it made their daily workflow much easier<br>
+                ✅ Fewer missed sessions or scheduling errors</p>
             </div>
         </div>
     </div>
@@ -237,38 +230,42 @@
 <!-- Results -->
 <section class="content-section">
     <div class="section-title">Results & Impact</div>
-    <h2>Results & Learnings</h2>
+    <h2>Results & Impact</h2>
 
-    <h3>Numbers</h3>
+    <h3>Business & Product</h3>
     <ul>
-        <li>Customer support questions dropped a lot</li>
-        <li>It became faster to add new features after the rebuild</li>
-        <li>Responsive design removed the need to maintain two separate versions</li>
+        <li>Sign-up rate increased steadily after the onboarding redesign. Support inquiries dropped a lot.</li>
+        <li>New features now take less time to ship after the frontend rebuild</li>
+        <li>One codebase removed the need to maintain two separate versions</li>
+        <li>Bringing tools in-house reduced outside tool costs and made operations more efficient</li>
     </ul>
 
-    <h3>Other Results</h3>
+    <h3>System & Team</h3>
     <ul>
-        <li>The brand now looks modern and professional</li>
-        <li>Users can start learning more quickly</li>
-        <li>Teachers said the new tools are easier to use</li>
-        <li>The team works more efficiently</li>
-    </ul>
-
-    <h3>What I Learned</h3>
-    <ul>
-        <li>In a small team, it helps a lot when the designer can also write code</li>
-        <li>When one person does both design and coding, the result matches the plan exactly</li>
-        <li>By improving step by step, we could make big changes without stopping the service</li>
+        <li>The design system made it possible to launch NetKOREA without starting from scratch</li>
+        <li>Owning both design and development helped the small team move fast</li>
+        <li>Having all data in one platform made it easier for the team to make decisions</li>
     </ul>
 
     <div class="highlight-box">
-        <h4>Platform Expansion</h4>
-        <p>We are still adding new features. We also made a new platform called <strong>NetKOREA</strong> for learning Korean. We used the same system but made a new design for it. This showed the system can work for other languages too.</p>
+        <h4>Platform Expansion: NetKOREA</h4>
+        <p>The system and design system built for BizCHINA were used to launch <strong>NetKOREA</strong>, a Korean language learning platform. We reused the core platform and redesigned the experience for Korean learners. This showed that the same architecture could support multiple language products.</p>
     </div>
 
     <div class="full-width-image">
         <img src="images/netkorea_all.png">
     </div>
+    <div class="highlight-box">
+        <h4>AI-Assisted Design Workflow</h4>
+        <p>I used AI tools — including Claude — to speed up prototyping, organize requirements, and prepare for stakeholder meetings. This helped me move faster from design to a spec that developers could work with. In a small team, it made a real difference in how quickly we could iterate.</p>
+    </div>
+    <!-- Image: prototype → final screen process (to be added) -->
+    <div class="full-width-image">
+        <img src="images/netkorea_process.png">
+    </div>
+
+
+
 </section>
 
 <!-- Skills -->
@@ -309,8 +306,8 @@
         <div class="skill-category">
             <h3>Collaboration</h3>
             <ul>
-                <li>Requirements definition with management</li>
-                <li>Cross-functional team work</li>
+                <li>Stakeholder alignment</li>
+                <li>Cross-functional teamwork</li>
                 <li>Agile development</li>
             </ul>
         </div>
@@ -333,7 +330,7 @@
 
 <!-- Footer -->
 <footer>
-    <p>&copy; 2026 Erica Huang. All rights reserved.</p>
+    <p>&copy; 2026 Joting Huang. All rights reserved.</p>
 </footer>
 
 <script src="mobile-lightbox.js"></script>

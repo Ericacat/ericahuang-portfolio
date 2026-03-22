@@ -1,5 +1,5 @@
 /* ==========================================
-   Portfolio CSS - Erica Huang
+   Portfolio CSS - Joting Huang
    Unified styles - 1280px max-width
    ========================================== */
 
@@ -398,7 +398,7 @@ html {
     padding: 0.875rem 1.75rem;
     background: transparent;
     border: 1px solid var(--color-accent);
-    border-radius: 24px;
+    border-radius: 48px;
     color: var(--color-accent);
     text-decoration: none;
     font-family: var(--font-en);
