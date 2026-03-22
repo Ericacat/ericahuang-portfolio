@@ -1,0 +1,1088 @@
+/* ==========================================
+   Portfolio CSS - Erica Huang
+   Unified styles - 1280px max-width
+   ========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-bg: #F7F5F2;
+    --color-surface: #FFFFFF;
+    --color-text: #2C2C2C;
+    --color-text-secondary: #6B6B6B;
+    --color-accent: #E85D3C;
+    --color-accent-hover: #D14D2C;
+    --color-border: #E8E3DD;
+    --color-shadow: rgba(0, 0, 0, 0.08);
+    --font-jp: 'Noto Sans JP', sans-serif;
+    --font-en: 'Outfit', sans-serif;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    font-family: var(--font-jp);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ==========================================
+   LANGUAGE SWITCHER
+   ========================================== */
+
+.lang-switcher {
+    position: fixed;
+    top: 1.5rem;
+    right: 2rem;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-family: var(--font-en);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    background: rgba(247, 245, 242, 0.85);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--color-border);
+    border-radius: 24px;
+    padding: 0.4rem 0.75rem;
+}
+
+.lang-switcher a {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding: 0.1rem 0.3rem;
+}
+
+.lang-switcher a:hover {
+    color: var(--color-accent);
+}
+
+.lang-switcher a.active {
+    color: var(--color-accent);
+}
+
+.lang-switcher .divider {
+    color: var(--color-border);
+}
+
+/* ==========================================
+   HOMEPAGE - HERO SECTION
+   ========================================== */
+
+.hero-minimal {
+    min-height: 90vh;
+    display: flex;
+    padding: 0 6rem;
+    position: relative;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 左側：燈 + 標題 */
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.decoration-container {
+    width: 88px;
+    position: relative;
+    display: inline-block;
+}
+
+.decoration-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.decoration-container::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%);
+    margin-top: -10px;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: radial-gradient(
+        ellipse at center,
+        rgba(255, 255, 255, 0.95) 0%,
+        rgba(255, 255, 255, 0.55) 35%,
+        rgba(255, 255, 255, 0.18) 60%,
+        rgba(255, 255, 255, 0.00) 80%
+    );
+    opacity: 1;
+    z-index: -1;
+}
+
+.hero-left h1 {
+    font-family: var(--font-en);
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--color-accent);
+    letter-spacing: -0.02em;
+    margin-top: 1rem;
+}
+
+.hero-left h1 .line1,
+.hero-left h1 .line2 {
+    font-size: clamp(3.2rem, 6.7vw, 5.2rem);
+    display: block;
+    margin-bottom: 0.2rem;
+    font-weight: 500;
+}
+
+.hero-left h1 .line3 {
+    font-size: clamp(2.4rem, 6vw, 4.8rem);
+    display: block;
+    font-weight: 500;
+}
+
+/* 右側：名字 + 說明 + 數據 */
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 12rem;
+}
+
+.name-section {
+    text-align: right;
+    padding-right: 0.8rem;
+}
+
+.name-jp {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.2em;
+}
+
+.name-gap {
+    width: 0.6em;
+}
+
+.char {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 1;
+}
+
+.reading {
+    font-size: 0.8rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 0;
+    padding: 0 8px;
+}
+
+.kanji {
+    font-size: clamp(3.5rem, 6vw, 5.5rem);
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.description-section {
+    text-align: right;
+}
+
+.description-section p {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    color: var(--color-text-secondary);
+}
+
+.stats {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4rem;
+    padding-right: 0.8rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-family: var(--font-en);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    letter-spacing: 0.05em;
+}
+
+/* ==========================================
+   HOMEPAGE - PROJECTS SECTION
+   ========================================== */
+
+.section {
+    padding: 6rem 6rem;
+}
+
+.section-header {
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+}
+
+.section-title {
+    font-family: var(--font-en);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    color: var(--color-text-secondary);
+    font-size: 0.95rem;
+}
+
+/* Project Cards - 左圖右文 */
+.projects-grid {
+    display: grid;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: var(--color-surface);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: var(--transition);
+    border: 1px solid var(--color-border);
+    text-decoration: none;
+    color: inherit;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    box-shadow: 0 2px 8px var(--color-shadow);
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    border-color: var(--color-accent);
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e5e5e5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 0.9rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.project-content {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-meta {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.project-tag {
+    font-size: 0.8rem;
+    padding: 0.4rem 1rem;
+    background: #F5F5F5;
+    border-radius: 24px;
+    color: var(--color-text-secondary);
+    font-family: var(--font-en);
+}
+
+.project-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.project-description {
+    color: var(--color-text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.project-highlights {
+    margin-bottom: 2rem;
+}
+
+.project-highlights h4 {
+    font-size: 0.85rem;
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+    font-family: var(--font-en);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.project-highlights ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.project-highlights li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--color-text-secondary);
+    font-size: 0.95rem;
+}
+
+.project-highlights li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+}
+
+.project-footer {
+    margin-top: auto;
+}
+
+.view-details-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1.75rem;
+    background: transparent;
+    border: 1px solid var(--color-accent);
+    border-radius: 24px;
+    color: var(--color-accent);
+    text-decoration: none;
+    font-family: var(--font-en);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.project-card:hover .view-details-btn {
+    background: var(--color-accent);
+    color: white;
+    transform: translateX(4px);
+}
+
+/* ==========================================
+   HOMEPAGE - LANDING PAGES SECTION
+   ========================================== */
+
+.lp-section {
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    padding: 6rem 6rem;
+}
+
+.lp-section .section-header {
+    max-width: 1200px;
+}
+
+.lp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lp-card {
+    background: var(--color-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lp-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px var(--color-shadow);
+}
+
+.lp-image {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e5e5e5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 0.85rem;
+}
+
+.lp-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lp-content {
+    padding: 1.5rem;
+}
+
+.lp-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.lp-description {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+/* ==========================================
+   HOMEPAGE - ABOUT SECTION
+   ========================================== */
+
+.about-section {
+    padding: 6rem 6rem;
+}
+
+.about-section .section-header {
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+}
+
+.about-intro-wrapper {
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+}
+
+.about-intro {
+    font-size: 1.1rem;
+    line-height: 2;
+    color: var(--color-text-secondary);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-category {
+    text-align: center;
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.skill-category h4 {
+    font-family: var(--font-en);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-list li {
+    padding: 0.4rem 0;
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+}
+
+/* ==========================================
+   HOMEPAGE - CONTACT SECTION
+   ========================================== */
+
+.contact-section {
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    padding: 6rem 6rem;
+}
+
+.contact-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-intro {
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 3rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: var(--font-en);
+    font-size: 1.1rem;
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--color-accent);
+}
+
+.contact-link span:first-child {
+    font-size: 1.5rem;
+}
+
+/* ==========================================
+   PROJECT DETAIL PAGE
+   ========================================== */
+
+.project-header {
+    padding: 6rem 6rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-title-large {
+    font-family: var(--font-en);
+    font-size: clamp(3rem, 6vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    color: var(--color-text);
+}
+
+.project-intro {
+    font-size: 1.2rem;
+    line-height: 2;
+    color: var(--color-text-secondary);
+    margin-bottom: 3rem;
+}
+
+.project-meta-grid {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.meta-item {
+    flex: 1;
+    min-width: 150px;
+}
+
+.meta-label {
+    font-family: var(--font-en);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.meta-value {
+    font-size: 1rem;
+    color: var(--color-text);
+}
+
+/* Content Sections */
+.content-section {
+    padding: 1rem 6rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-section h2 {
+    font-family: var(--font-en);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--color-text);
+}
+
+.content-section h3 {
+    font-family: var(--font-en);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+}
+
+.content-section h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-accent);
+}
+
+.content-section p {
+    font-size: 1.05rem;
+    line-height: 2;
+    color: var(--color-text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.content-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+}
+
+.content-section li {
+    padding: 0.75rem 0;
+    padding-left: 2rem;
+    position: relative;
+    color: var(--color-text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.content-section li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
+.content-section strong {
+    color: var(--color-text);
+}
+
+/* Images */
+.full-width-image {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;    /* ← 加這行 */
+    margin: 3rem 0;
+    border: 1px solid var(--color-border);
+}
+
+/* 加這段（圖片樣式） */
+.full-width-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-text-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin: 3rem 0;
+    align-items: center;
+}
+
+.image-text-section.reverse {
+    direction: rtl;
+}
+
+.image-text-section.reverse > * {
+    direction: ltr;
+}
+
+.section-image {
+    width: 100%;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e5e5e5 100%);
+    aspect-ratio: 4/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 0.85rem;
+    text-align: center;
+    border: 1px solid var(--color-border);
+}
+.section-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Highlight Boxes */
+.highlight-box {
+    background: #FFF9F0;
+    border-left: 4px solid var(--color-accent);
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 0 12px 12px 0;
+}
+
+.highlight-box h4 {
+    color: var(--color-accent);
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.highlight-box p {
+    margin-bottom: 0;
+    color: var(--color-text);
+}
+
+.value-box {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.value-box h4 {
+    margin-top: 0;
+}
+
+.value-box ul {
+    margin-bottom: 0;
+}
+
+/* Subsections */
+.subsection {
+    margin-top: 4rem;
+    padding-top: 4rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.subsection:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+/* Skills Grid (Project Detail) */
+.content-section .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.content-section .skill-category h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    color: var(--color-accent);
+}
+
+.content-section .skill-category ul {
+    margin: 0;
+}
+
+.content-section .skill-category li {
+    padding: 0.4rem 0;
+    padding-left: 0;
+}
+
+.content-section .skill-category li:before {
+    content: none;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 6rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.back-to-top-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.25rem 2.5rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 24px;
+    color: var(--color-text);
+    text-decoration: none;
+    font-family: var(--font-en);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.back-to-top-button:hover {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--color-shadow);
+}
+
+/* Footer */
+footer {
+    padding: 3rem 6rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+}
+
+/* ==========================================
+   RESPONSIVE - 1440px
+   ========================================== */
+
+/* Mobile lightbox - centered layout (inner pages only) */
+#mobile-lightbox {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+}
+
+#mobile-lightbox .lightbox-content {
+    max-width: 90vw;
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    margin: 0;
+    object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+    .mobile-zoomable {
+        cursor: zoom-in;
+    }
+
+    .hero-minimal {
+        padding: 0 3rem;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding-top: 3rem;
+    }
+
+    .hero-right {
+        padding-top: 4rem;
+    }
+
+    .name-jp {
+        justify-content: flex-start;
+    }
+
+    .name-section,
+    .description-section {
+        text-align: left;
+        padding-right: 0;
+    }
+
+    .description-section p {
+        font-size: 1rem;
+    }
+
+    .stats {
+        justify-content: flex-start;
+        padding-right: 0;
+    }
+
+    .section,
+    .lp-section,
+    .about-section,
+    .contact-section,
+    .project-header,
+    .content-section,
+    .back-to-top {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        min-height: 300px;
+    }
+
+    .image-text-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .image-text-section.reverse {
+        direction: ltr;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-minimal {
+        padding: 0 2rem;
+    }
+
+    .hero-content {
+        padding-top: 2rem;
+    }
+
+    .decoration-container {
+        width: 60px;
+    }
+
+    .stats {
+        gap: 2rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .char {
+        align-items: normal;
+    }
+
+    .section,
+    .lp-section,
+    .about-section,
+    .contact-section,
+    .project-header,
+    .content-section,
+    .back-to-top,
+    footer {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .project-content {
+        padding: 2rem;
+    }
+}
+
+/* ==========================================
+   LIGHTBOX
+   ========================================== */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    overflow-y: auto;          /* 改：加這行 */
+    overflow-x: hidden;        /* 改：加這行 */
+    cursor: pointer;
+    padding: 60px 0;           /* 改：加這行 */
+    /* 刪除這兩行：
+    justify-content: center;
+    align-items: center;
+    */
+}
+.lightbox-content {
+    display: block;            /* 改：加這行 */
+    margin: 0 auto;            /* 改：加這行 */
+    max-width: 900px;          /* 改：從 90% 改成 900px */
+    width: 90%;                /* 改：加這行 */
+    height: auto;              /* 改：加這行 */
+    cursor: default;           /* 改：加這行 */
+    /* 刪除這兩行：
+    max-height: 90vh;
+    object-fit: contain;
+    animation: fadeIn 0.3s ease;
+    */
+}
+.lightbox-close {
+    position: fixed;           /* 改：從 absolute 改成 fixed */
+    top: 30px;
+    right: 50px;
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: var(--transition);
+    z-index: 10000;            /* 改：加這行 */
+}
+.lightbox-close:hover {
+    color: var(--color-accent);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 640px) {
+    .lightbox {                /* 改：加這段 */
+        padding: 50px 0;
+    }
+
+    .lightbox-content {
+        max-width: 100%;       /* 改：從 95% 改成 100% */
+        width: 95%;            /* 改：加這行 */
+        /* 刪除：max-height: 80vh; */
+    }
+
+    .lightbox-close {
+        top: 20px;
+        right: 20px;
+        font-size: 40px;
+    }
+}

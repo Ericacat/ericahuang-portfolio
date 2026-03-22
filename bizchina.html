@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BizCHINA - Erica Huang</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Language Switcher -->
+<div class="lang-switcher">
+    <a href="bizchina.html" class="active">JP</a>
+    <span class="divider">|</span>
+    <a href="bizchina-en.html">EN</a>
+</div>
+
+<!-- Project Header -->
+<section class="project-header">
+    <h1 class="project-title-large">BizCHINA<br>教育プラットフォーム</h1>
+    
+    <p class="project-intro">
+        ビジネス中国語のオンライン学習プラットフォームの全体再設計。<br>
+        プロダクトデザイナーとして、UI/UX設計からVue.jsを用いた前端実装まで一貫して担当し、ブランド刷新と業務効率化を実現しました。
+    </p>
+    
+    <div class="project-meta-grid">
+        <div class="meta-item">
+            <div class="meta-label">Role</div>
+            <div class="meta-value">プロダクトデザイナー<br>UI/UX + Frontend</div>
+        </div>
+        <div class="meta-item">
+            <div class="meta-label">Period</div>
+            <div class="meta-value">2024年2月 - 現在</div>
+        </div>
+        <div class="meta-item">
+            <div class="meta-label">Company</div>
+            <div class="meta-value">株式会社ネットスター</div>
+        </div>
+        <div class="meta-item">
+            <div class="meta-label">Team Size</div>
+            <div class="meta-value">6人（小規模チーム）</div>
+        </div>
+    </div>
+</section>
+
+<!-- Platform Overview -->
+<section class="content-section">
+    <div class="full-width-image">
+        <img src="images/bizchina_all.png">
+    </div>
+</section>
+
+<!-- Challenge -->
+<section class="content-section">
+    <div class="section-title">Challenge</div>
+    <h2>課題</h2>
+    
+    <h3>1. 古いブランドイメージが新規ユーザー獲得を阻害</h3>
+    <p>既存サイトのデザインが時代遅れで、現代的なオンライン教育サービスに対する市場の期待に応えられず、ブランド印象と新規ユーザーのコンバージョンに悪影響を及ぼしていました。</p>
+
+    <h3>2. レガシーシステムが開発効率を低下</h3>
+    <p>初期に構築されたシステムは、新機能追加や業務フロー調整のたびに高い開発・保守コストが発生し、運営負担も増加していました。</p>
+
+    <h3>3. 外部ツール依存による運営の非効率</h3>
+    <p>授業実施や講師とのコミュニケーションを外部ツールに依存しているため、出席管理や教育フローの統合が困難で、運営コストも増大していました。</p>
+</section>
+
+<!-- Solution 1 -->
+<section class="content-section">
+    <div class="section-title">Solution 1</div>
+    <h2>ブランド刷新 & UI/UX 最適化</h2>
+    
+    <p>市場の期待に応えるため、ブランド全体の視覚システムを刷新し、ユーザー体験を根本から再設計しました。</p>
+
+    <div class="subsection">
+        <h3>1-1. ブランドビジュアルリニューアル</h3>
+        
+        <p><strong>実施内容：</strong></p>
+        <ul>
+            <li>ブランドカラー・タイポグラフィの全面更新</li>
+            <li>現代的で親しみやすいデザインシステムの構築</li>
+            <li>サイト全体の視覚的一貫性を実現</li>
+        </ul>
+
+        <div class="full-width-image">
+            <img src="images/bizchina_design.png">
+        </div>
+
+        <p><strong>成果：</strong></p>
+        <ul>
+            <li>現代的なブランドイメージを確立</li>
+            <li>サイト全体の視覚的一貫性を実現</li>
+            <li>後続機能拡張のための柔軟な設計基盤を構築</li>
+        </ul>
+    </div>
+
+    <div class="subsection">
+        <h3>1-2. 入会フロー簡素化</h3>
+        
+        <h4>発見した課題</h4>
+        <p>リニューアル後、無料体験の申込率は向上したものの、実際の入会率が低迷。5ステップの複雑なフローが心理的障壁となっていました。</p>
+
+        <h4>ステークホルダーのニーズ</h4>
+        <ul>
+            <li><strong>経営層：</strong>ユーザーに料金を一目で分かるように提示したい</li>
+            <li><strong>日本人スタッフ：</strong>詳細情報をしっかり説明したい</li>
+            <li><strong>ユーザー：</strong>簡単に始めたい</li>
+        </ul>
+
+        <h4>設計アプローチ</h4>
+        <p>これらの異なるニーズを理解し、全員が納得できる解決策を設計しました：</p>
+        <ul>
+            <li><strong>5ステップ → 2ステップに簡素化</strong></li>
+            <li>料金を最初に明示（経営層の透明性ニーズに対応）</li>
+            <li>詳細情報は後続ステップで補完（ユーザーの心理的負担を軽減）</li>
+            <li>無料体験 → 低価格の有料体験に変更（本気のユーザーを集客）</li>
+        </ul>
+
+        <div class="full-width-image">
+            <img src="images/bizchina_plan1.png">
+        </div>
+        <div class="full-width-image">
+            <img src="images/bizchina_plan2.png">
+        </div>
+
+        <div class="highlight-box">
+            <h4>成果</h4>
+            <p> ✅ ユーザーが迅速に学習を開始でき、入会率も安定的に上昇<br>
+                ✅ カスタマーサポートへの問い合わせが顕著に減少
+        </div>
+    </div>
+</section>
+
+<!-- Solution 2 -->
+<section class="content-section">
+    <div class="section-title">Solution 2</div>
+    <h2>前端再構築とシステム統合</h2>
+    
+    <p>6人の小規模チームで、専任フロントエンドエンジニアがいない状況でした。私はデザイナー兼フロントエンド開発者として、設計から実装まで一貫して担当しました。</p>
+
+    <div class="value-box">
+        <h4>この体制のメリット</h4>
+        <ul>
+            <li>設計と実装の乖離がゼロ（自分で実装するため）</li>
+            <li>設計QAの往復が不要</li>
+            <li>設計意図を完璧に実現</li>
+            <li>開発スピードの向上</li>
+        </ul>
+    </div>
+
+    <div class="full-width-image">
+        <img src="images/bizchina_flow.png">
+    </div>
+
+    <div class="subsection">
+        <h3>実例1: レスポンシブデザインの実装</h3>
+        
+        <h4>課題</h4>
+        <p>既存サイトは、デスクトップ版とモバイル版が別々に開発されていました（二重の開発コスト）。</p>
+
+        <h4>解決策</h4>
+        <p>Vue.jsを用いてレスポンシブ対応を実装。一つのコードベースで全デバイスに対応させ、開発・保守コストを大幅削減しました。</p>
+
+        <div class="full-width-image">
+            <img src="images/bizchina_rwd.png">
+        </div>
+
+        <h4>成果</h4>
+        <ul>
+            <li>開発コストを削減（二重開発が不要に）</li>
+            <li>保守性が向上（一つのコードベースで管理）</li>
+            <li>モバイルユーザーの体験が改善</li>
+        </ul>
+    </div>
+
+    <div class="subsection">
+        <h3>実例2: Web教室システムの設計・実装</h3>
+        
+        <div class="image-text-section reverse">
+            <div>
+                <h4>課題</h4>
+                <p>外部ビデオツール依存により、授業状況や出席情報を把握できず、教育フロー最適化に限界がありました。</p>
+
+                <h4>解決策</h4>
+                <ul>
+                    <li>自社Web教室インターフェースの設計・実装</li>
+                    <li>バックエンドの映像配信機能と直感的なUIを統合</li>
+                    <li>完全なユーザー体験を実現</li>
+                </ul>
+
+                <h4>成果</h4>
+                <ul>
+                    <li>外部ツール依存度を低減</li>
+                    <li>教育フローをプラットフォーム内に統合</li>
+                    <li>運営側が授業状況をリアルタイムで把握可能に</li>
+                </ul>
+            </div>
+            <div class="section-image">
+                <img src="images/bizchina_webclass.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Solution 3 -->
+<section class="content-section">
+    <div class="section-title">Solution 3</div>
+    <h2>講師用WeChat小程序の設計・実装</h2>
+    
+    <div class="image-text-section">
+        <div class="section-image">
+            <img src="images/bizchina_miniapp.png">
+        </div>
+        <div>
+            <h3>課題</h3>
+            <p>講師が授業確認のために複数のツールを使い分ける必要があり、操作負担が大きい状況でした。</p>
+
+            <h3>解決策</h3>
+            <ul>
+                <li><strong>Vue.js + uni-app</strong>を用いた講師用WeChat小程序を設計・実装</li>
+                <li>授業スケジュール、教材管理、生徒進捗確認をモバイルで完結</li>
+                <li>バックエンドのコースデータをより読みやすく、確認しやすい形で表示</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h4>成果</h4>
+                <p>✅ 講師の操作負担を軽減<br>
+                ✅ 「モバイルで管理できて便利」とポジティブなフィードバック<br>
+                ✅ 授業準備効率が向上</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Results -->
+<section class="content-section">
+    <div class="section-title">Results & Impact</div>
+    <h2>成果と学び</h2>
+
+    <h3>定量的成果</h3>
+    <ul>
+        <li>カスタマーサポート問い合わせが顕著に減少</li>
+        <li>開発効率向上：前端再構築により、新機能追加時間が短縮</li>
+        <li>保守コスト削減：レスポンシブ対応で二重開発が不要に</li>
+    </ul>
+
+    <h3>定性的成果</h3>
+    <ul>
+        <li>ブランドイメージが現代的なオンライン教育サービスに刷新</li>
+        <li>ユーザーがより迅速に学習を開始できる体験を実現</li>
+        <li>講師から「使いやすくなった」とポジティブなフィードバック</li>
+        <li>運営側の業務効率が向上</li>
+    </ul>
+
+    <h3>学び</h3>
+    <ul>
+        <li>小規模チーム（6人）では、デザイナーが実装まで担当することで意思疎通が円滑になる</li>
+        <li>設計から実装まで同じ人が担当すると、設計QAの往復が不要になり品質が向上する</li>
+        <li>段階的な改善アプローチにより、既存サービスを止めずに大規模リニューアルが可能</li>
+    </ul>
+
+    <div class="highlight-box">
+        <h4>プラットフォーム展開</h4>
+        <p>現在も継続的に機能追加と改善を実施中。さらに、
+            <strong>NetKOREA（韓国語学習プラットフォーム）</strong>への展開も実現しました。
+            同じシステム基盤を活用しながら、韓国語学習に特化した
+            デザインを新たに設計し、横展開の可能性を実証しました。</p>
+    </div>
+
+    <div class="full-width-image">
+        <img src="images/netkorea_all.png">
+    </div>
+
+</section>
+
+<!-- Skills -->
+<section class="content-section">
+    <div class="section-title">Skills & Tools Used</div>
+    <h2>使用スキル・ツール</h2>
+
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h3>Design</h3>
+            <ul>
+                <li>UI/UX Design</li>
+                <li>Information Architecture</li>
+                <li>User Research</li>
+                <li>Prototyping</li>
+                <li>Design System Development</li>
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>Tools</h3>
+            <ul>
+                <li>Figma</li>
+                <li>Adobe XD</li>
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>Development</h3>
+            <ul>
+                <li>HTML / CSS / JavaScript</li>
+                <li>Vue.js</li>
+                <li>uni-app (WeChat)</li>
+                <li>Responsive Design</li>
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>Collaboration</h3>
+            <ul>
+                <li>経営層との要件定義</li>
+                <li>エンジニアチームとの協業</li>
+                <li>アジャイル開発</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="content-section" style="text-align: center; padding: 2rem 0;">
+    <a href="https://www.bizchina.jp/" target="_blank" style="color: var(--color-accent); font-size: 1.1rem; text-decoration: none; border-bottom: 2px solid var(--color-accent); padding-bottom: 0.25rem;">
+        www.bizchina.jp →
+    </a>
+    <a href="https://www.netkorea.jp/" target="_blank" style="color: var(--color-accent); font-size: 1.1rem; text-decoration: none; border-bottom: 2px solid var(--color-accent); padding-bottom: 0.25rem;">
+        www.netkorea.jp →
+    </a>
+</section>
+<!-- Back to Top -->
+<section class="back-to-top">
+    <a href="index.html" class="back-to-top-button">
+        <span>←</span>
+        <span>Back to Home</span>
+    </a>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 Erica Huang. All rights reserved.</p>
+</footer>
+
+<script src="mobile-lightbox.js"></script>
+</body>
+</html>
