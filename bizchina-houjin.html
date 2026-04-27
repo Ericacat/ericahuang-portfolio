@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BizCHINA 法人向け研修管理ダッシュボード - Erica Huang</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Language Switcher -->
+<div class="lang-switcher">
+    <a href="bizchina-houjin.html" class="active">JP</a>
+    <span class="divider">|</span>
+    <a href="bizchina-houjin-en.html">EN</a>
+</div>
+
+<!-- Project Header -->
+<section class="project-header">
+    <h1 class="project-title-large">BizCHINA<br>法人研修管理システム</h1>
+
+    <p class="project-intro">
+        既存のtoC中国語学習プラットフォームに、法人契約企業向けの研修管理機能を新設。<br>
+        採用募集から受講管理・証明書発行まで、これまで担当者が手動で行っていた業務フローを一元化し、システム化しました。
+    </p>
+
+    <div class="project-meta-grid">
+        <div class="meta-item">
+            <div class="meta-label">Role</div>
+            <div class="meta-value">プロダクトデザイナー<br>UI・UX設計</div>
+        </div>
+        <div class="meta-item">
+            <div class="meta-label">Period</div>
+            <div class="meta-value">2024年〜現在（開発中）</div>
+        </div>
+        <div class="meta-item">
+            <div class="meta-label">Company</div>
+            <div class="meta-value">株式会社ネットスター</div>
+        </div>
+        <div class="meta-item">
+            <div class="meta-label">Project Type</div>
+            <div class="meta-value">業務システム設計<br>（管理ダッシュボード）</div>
+        </div>
+    </div>
+</section>
+
+<!-- Platform Overview -->
+<section class="content-section">
+    <div class="full-width-image masked-image">
+        <img src="images/houjin_dashboard_empty.png">
+    </div>
+</section>
+
+<!-- Challenge -->
+<section class="content-section">
+    <div class="section-title">Challenge</div>
+    <h2>課題</h2>
+
+    <h3>担当者の属人的な管理業務</h3>
+    <p>本来はシステムが担うべき「受講リマインド」「出席率の集計」「証明書発行」などの業務を、社内スタッフが手動で行っていた。各企業ごとに状況が異なるため、担当者の負担が増大していた。</p>
+
+    <h3>人事担当者にとっての心理的負担</h3>
+    <p>受講率が低い従業員への声かけは、同じ職場で上下関係のある人事担当者にとってデリケートな作業。個人へのプレッシャーを生みやすく、リマインドをシステム側に委ねたいというニーズがあった。</p>
+
+    <h3>研修状況の可視化不足</h3>
+    <p>各企業の研修進捗を把握するためには、社内スタッフへの問い合わせが必要で、リアルタイムでの状況確認ができなかった。</p>
+</section>
+
+<!-- Solution 1 -->
+<section class="content-section">
+    <div class="section-title">Solution 1</div>
+    <h2>業務フローの設計とシステム化</h2>
+
+    <p>「募集ページの作成 → 従業員の申し込み → 受講 → 証明書発行」という一連の研修フローを、初めてシステムとして設計・実装。これまで担当者が個別に対応していた業務を、ダッシュボード上で完結できるようにした。</p>
+
+    <div class="subsection">
+        <h3>募集ページエディター</h3>
+        <p>法人の人事担当者が、プランや割引・公開期間などを設定し、従業員向けの申し込みページを自ら作成・公開できる機能。右側にリアルタイムプレビューを配置し、操作のフィードバックを直感的に確認できる設計とした。</p>
+
+        <div class="full-width-image masked-image">
+            <img src="images/houjin_editor.png">
+        </div>
+    </div>
+</section>
+
+<!-- Solution 2 -->
+<section class="content-section">
+    <div class="section-title">Solution 2</div>
+    <h2>受講状況の一目把握と低受講率の早期検知</h2>
+
+    <p>ダッシュボードの設計における最重要指標は「受講率」。問題のある受講者を素早く発見できるよう、低受講率には色で警告を表示し、担当者がスクロールなく状況を把握できるレイアウトを設計した。</p>
+
+    <div class="subsection">
+        <h3>メール通知トグル機能</h3>
+        <p>受講を促すリマインドメールを、担当者の手を介さずシステムから自動送信できる機能。「声がけ」という人的コストと心理的負担をなくすことで、人事担当者が気兼ねなく受講促進を行える環境を設計した。</p>
+
+        <div class="full-width-image masked-image">
+            <img src="images/houjin_dashboard_active.png">
+        </div>
+    </div>
+</section>
+
+<!-- Solution 3 -->
+<section class="content-section">
+    <div class="section-title">Solution 3</div>
+    <h2>受講証明書の一括ダウンロード</h2>
+
+    <p>各受講者の証明書を個別に発行する手間を省き、複数名を選択して一括ダウンロードできる機能を実装。補助金申請などの締め切りがある業務に対応できる設計とした。また、期ごとの募集状況・受講実績を「過去の研修」ページで遡って確認できる。</p>
+
+    <div class="full-width-image masked-image">
+        <img src="images/houjin_download.png">
+    </div>
+    <div class="full-width-image masked-image">
+        <img src="images/houjin_past.png">
+    </div>
+</section>
+
+<!-- Results -->
+<section class="content-section">
+    <div class="section-title">Results & Impact</div>
+    <h2>成果と学び</h2>
+
+    <h3>定量的成果</h3>
+    <ul>
+        <li>社内スタッフによる手動管理の工数を削減</li>
+        <li>受講証明書の発行対応時間が短縮</li>
+    </ul>
+
+    <h3>定性的成果</h3>
+    <ul>
+        <li>人事担当者がシステム上でリマインドを完結できるようになり、心理的負担が軽減</li>
+        <li>法人ごとの研修状況をリアルタイムで可視化</li>
+    </ul>
+
+    <div class="highlight-box">
+        <h4>このプロジェクトを通じて</h4>
+        <p>単なるUI設計にとどまらず、「誰が」「どんな文脈で」この画面を使うかを起点に設計しました。特にリマインド通知機能は、職場の人間関係という文脈を踏まえた設計判断であり、UIの背後にある業務・心理的な課題の解決を意識した取り組みです。</p>
+    </div>
+</section>
+
+<!-- Skills -->
+<section class="content-section">
+    <div class="section-title">Skills & Tools Used</div>
+    <h2>使用スキル・ツール</h2>
+
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h3>Design</h3>
+            <ul>
+                <li>UI/UX Design</li>
+                <li>業務フロー設計</li>
+                <li>ダッシュボード設計</li>
+                <li>プロトタイピング</li>
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>Tools</h3>
+            <ul>
+                <li>Figma</li>
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>Development</h3>
+            <ul>
+                <li>Vue.js</li>
+                <li>レスポンシブデザイン</li>
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>Collaboration</h3>
+            <ul>
+                <li>経営層との要件定義</li>
+                <li>エンジニアチームとの協業</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Back to Top -->
+<section class="back-to-top">
+    <a href="index.html" class="back-to-top-button">
+        <span>←</span>
+        <span>Back to Home</span>
+    </a>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 Erica Huang. All rights reserved.</p>
+</footer>
+
+<script src="mobile-lightbox.js"></script>
+<script>
+(function () {
+    const PASSWORD = 'ericahuang';
+    const SESSION_KEY = 'houjin_unlocked';
+    const isJP = document.documentElement.lang === 'ja';
+
+    // Password modal
+    const modal = document.createElement('div');
+    modal.style.cssText = 'display:none;position:fixed;inset:0;z-index:10000;background:rgba(0,0,0,0.7);backdrop-filter:blur(6px);align-items:center;justify-content:center;flex-direction:column;gap:20px';
+    modal.innerHTML = `
+        <p style="color:rgba(255,255,255,.5);font-family:'Outfit',sans-serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin:0">
+            ${isJP ? 'パスワードを入力してください' : 'Enter password to view'}
+        </p>
+        <div style="display:flex;border:1px solid rgba(255,255,255,.2);border-radius:6px;overflow:hidden">
+            <input id="pw-input" type="password" placeholder="Password"
+                style="background:transparent;border:none;outline:none;color:#fff;font-family:'Outfit',sans-serif;font-size:15px;padding:12px 16px;width:200px;caret-color:#fff">
+            <button id="pw-btn"
+                style="background:rgba(255,255,255,.08);border:none;border-left:1px solid rgba(255,255,255,.2);color:#fff;font-family:'Outfit',sans-serif;font-size:13px;padding:12px 18px;cursor:pointer">
+                Enter
+            </button>
+        </div>
+        <p id="pw-error" style="color:#ff6b6b;font-family:'Outfit',sans-serif;font-size:13px;margin:0;opacity:0">
+            ${isJP ? 'パスワードが違います' : 'Incorrect password'}
+        </p>
+    `;
+    document.body.appendChild(modal);
+
+    let pendingSrc = null;
+
+    function openLightbox(src) {
+        const lb = document.getElementById('mobile-lightbox');
+        document.getElementById('mobile-lightbox-img').src = src;
+        lb.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+
+    function showModal(src) {
+        pendingSrc = src;
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        document.getElementById('pw-error').style.opacity = '0';
+        setTimeout(() => document.getElementById('pw-input').focus(), 50);
+    }
+
+    function closeModal() {
+        modal.style.display = 'none';
+        document.getElementById('pw-input').value = '';
+        pendingSrc = null;
+        document.body.style.overflow = '';
+    }
+
+    function attempt() {
+        const input = document.getElementById('pw-input');
+        if (input.value === PASSWORD) {
+            sessionStorage.setItem(SESSION_KEY, '1');
+            closeModal();
+            openLightbox(pendingSrc);
+        } else {
+            document.getElementById('pw-error').style.opacity = '1';
+            input.value = '';
+            input.focus();
+        }
+    }
+
+    document.getElementById('pw-btn').addEventListener('click', attempt);
+    document.getElementById('pw-input').addEventListener('keydown', e => { if (e.key === 'Enter') attempt(); });
+    modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.style.display === 'flex') closeModal(); });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.masked-image').forEach(function (el) {
+            el.addEventListener('click', function () {
+                const src = this.querySelector('img').src;
+                if (sessionStorage.getItem(SESSION_KEY) === '1') {
+                    openLightbox(src);
+                } else {
+                    showModal(src);
+                }
+            });
+        });
+    });
+})();
+</script>
+</body>
+</html>
