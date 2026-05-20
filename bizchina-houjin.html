@@ -230,12 +230,19 @@
         document.body.style.overflow = '';
     }
 
+    function unlockAllImages() {
+        document.querySelectorAll('.masked-image').forEach(function (el) {
+            el.classList.remove('masked-image');
+        });
+    }
+
     function attempt() {
         const input = document.getElementById('pw-input');
         if (input.value === PASSWORD) {
             const src = pendingSrc;
             sessionStorage.setItem(SESSION_KEY, '1');
             closeModal();
+            unlockAllImages();
             openLightbox(src);
         } else {
             document.getElementById('pw-error').style.opacity = '1';
@@ -250,6 +257,9 @@
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.style.display === 'flex') closeModal(); });
 
     document.addEventListener('DOMContentLoaded', function () {
+        if (sessionStorage.getItem(SESSION_KEY) === '1') {
+            unlockAllImages();
+        }
         document.querySelectorAll('.masked-image').forEach(function (el) {
             el.addEventListener('click', function () {
                 const src = this.querySelector('img').src;
