@@ -1,78 +1,67 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>黃楉婷 (Erica Huang) - Product Designer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- Language Switcher -->
 <div class="lang-switcher">
-    <a href="index.html" class="active">JP</a>
+    <a href="index.html">JP</a>
     <span class="divider">|</span>
     <a href="index-en.html">EN</a>
     <span class="divider">|</span>
-    <a href="index-tw.html">TW</a>
+    <a href="index-tw.html" class="active">TW</a>
 </div>
 
 <!-- Hero Section -->
 <section class="hero-minimal">
     <div class="hero-content">
-        <!-- 左側：燈 + 標題 -->
         <div class="hero-left">
             <div class="decoration-container">
                 <img src="lamp.svg" alt="">
             </div>
-            
+
             <h1>
                 <span class="line1">DESIGN ×</span>
                 <span class="line2">FRONTEND</span>
                 <span class="line3">IMPLEMENTATION</span>
             </h1>
         </div>
-        
-        <!-- 右側：名字 + 說明 + 數據 -->
+
         <div class="hero-right">
             <div class="name-section">
                 <div class="name-jp">
                     <span class="char">
-                        <span class="reading">コウ</span>
-                        <span class="kanji">黃</span>
-                    </span>
-                    <span class="name-gap"></span>
-                    <span class="char">
-                        <span class="reading">ジャク</span>
-                        <span class="kanji">楉</span>
-                    </span>
-                    <span class="char">
-                        <span class="reading">テイ</span>
-                        <span class="kanji">婷</span>
+                        <span class="reading">Huang Joting</span>
+                        <span class="kanji">黃楉婷</span>
                     </span>
                 </div>
             </div>
 
             <div class="description-section">
-                <p>デザインからフロントエンド実装まで一貫して対応。</p>
-                <p>プロダクトの目標に応じて、最適な形で実現します。</p>
+                <p>設計到前端實作，我全包。</p>
+                <p>針對產品目標，找出最適合的解決方案。</p>
             </div>
-            
+
             <div class="stats">
                 <div class="stat-item">
                     <div class="stat-number">10+</div>
-                    <div class="stat-label">年の経験</div>
+                    <div class="stat-label">年資</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">50+</div>
-                    <div class="stat-label">UI・Web案件</div>
+                    <div class="stat-label">UI・Web 專案</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">N1</div>
-                    <div class="stat-label">日本語能力</div>
+                    <div class="stat-label">日語能力</div>
                 </div>
             </div>
         </div>
@@ -83,70 +72,70 @@
 <section id="projects" class="section">
     <div class="section-header">
         <div class="section-title">Featured Projects</div>
-        <p class="section-subtitle">厳選したプロジェクトをご紹介します</p>
+        <p class="section-subtitle">精選作品介紹</p>
     </div>
 
     <div class="projects-grid">
         <!-- Project 1: BizCHINA -->
-        <a href="bizchina.html" class="project-card">
+        <a href="bizchina-tw.html" class="project-card">
             <div class="project-image">
                 <img src="images/top1.png" alt="BizCHINA">
             </div>
             <div class="project-content">
                 <div class="project-meta">
                     <span class="project-tag">Education Platform</span>
-                    <span class="project-tag">2024 - 現在</span>
+                    <span class="project-tag">2024 - 至今</span>
                     <span class="project-tag">Design + Frontend</span>
                 </div>
-                <h3 class="project-title">BizCHINA 教育プラットフォーム</h3>
+                <h3 class="project-title">BizCHINA 商業中文學習平台</h3>
                 <p class="project-description">
-                    サイトが古くなったという課題に対し、6人の小規模チームでUI/UX設計からVue.js実装まで一貫して担当。設計から実装まで同じ人が対応することで設計QAの往復が不要になり、設計意図を完璧に実現できました。
+                    在一支六人小團隊裡，UI/UX 設計到 Vue.js 實作全部自己包。因為設計和開發都在同一人手上，省去了設計審查的往返，最終成品和設計稿完全一致。
                 </p>
                 <div class="project-highlights">
                     <h4>Key Highlights</h4>
                     <ul>
-                        <li>ブランド刷新とサイト全体の再設計</li>
-                        <li>Vue.js + uni-appによるフロントエンド実装支援</li>
-                        <li>入会フローをシンプルにしたことでCS問い合わせが大きく減少</li>
+                        <li>品牌翻新與全站重新設計</li>
+                        <li>Vue.js + uni-app 前端實作</li>
+                        <li>優化入會流程，大幅降低客服諮詢量</li>
                     </ul>
                 </div>
                 <div class="project-footer">
-                    <span class="view-details-btn">詳細を見る<span class="arrow">→</span></span>
+                    <span class="view-details-btn">查看詳情<span class="arrow">→</span></span>
                 </div>
             </div>
         </a>
 
         <!-- Project 2: BizCHINA 法人 -->
-        <a href="bizchina-houjin.html" class="project-card">
+        <a href="bizchina-houjin-tw.html" class="project-card">
             <div class="project-image">
-                <img src="images/top4.png" alt="BizCHINA 法人研修管理">
+                <img src="images/top4.png" alt="BizCHINA 法人教育訓練管理系統">
             </div>
             <div class="project-content">
                 <div class="project-meta">
                     <span class="project-tag">Business System</span>
-                    <span class="project-tag">2024 - 現在</span>
+                    <span class="project-tag">2024 - 至今</span>
                     <span class="project-tag">UI/UX Design</span>
                 </div>
-                <h3 class="project-title">BizCHINA 法人研修管理システム</h3>
+                <h3 class="project-title">BizCHINA 法人教育訓練管理系統</h3>
                 <p class="project-description">
-                    今あるtoC教育プラットフォームに、法人向けの研修管理機能を追加。これまで担当者が手動で行っていた一つひとつの業務を、システム上でまとめて管理できるようにしました。
+                    在既有的 B2C 教育平台上，新增法人教育訓練管理功能。過去全靠人工處理的每一道程序，現在都能在系統內統一管理。
                 </p>
                 <div class="project-highlights">
                     <h4>Key Highlights</h4>
                     <ul>
-                        <li>担当者が自分で設定・公開できる申し込みページ設計</li>
-                        <li>受講状況を一目で把握できるダッシュボード設計</li>
-                        <li>通知をシステムに任せることで、心理的な負担が減る</li>
+                        <li>主管可自行設定並發布員工申請頁面</li>
+                        <li>一眼掌握受訓狀況的儀表板設計</li>
+                        <li>通知自動化，省去追蹤的心理負擔</li>
                     </ul>
                 </div>
                 <div class="project-footer">
-                    <span class="view-details-btn">詳細を見る<span class="arrow">→</span></span>
+                    <span class="view-details-btn">查看詳情<span class="arrow">→</span></span>
                 </div>
             </div>
         </a>
 
         <!-- Project 3: TaipeiPASS -->
-        <a href="taipeipass.html" class="project-card">
+        <a href="taipeipass-tw.html" class="project-card">
             <div class="project-image">
                 <img src="images/top2.png" alt="台北通">
             </div>
@@ -158,24 +147,24 @@
                 </div>
                 <h3 class="project-title">台北通 TaipeiPASS</h3>
                 <p class="project-description">
-                    台北市政府の公式市民サービスアプリ・Webサイトで、確立されたデザインシステムを活用しながら新機能のUI/UX設計を担当。フロントエンド技術の理解を活かし、複数の開発チーム間の調整とデザイン品質の統一に貢献しました。
+                    台北市政府官方的市民服務 App 與官網。在既有設計系統的框架下，負責新功能的 UI/UX 設計，並跨多個外包開發商進行設計品質把關。
                 </p>
                 <div class="project-highlights">
                     <h4>Key Highlights</h4>
                     <ul>
-                        <li>「ユーザー行動」軸のデザインガイドライン作り直し
-                        <li>外部ベンダーへのデザインガイダンスと品質管理
-                        <li>シニアデザイナーとして画面提案から経営層への説得まで担当
+                        <li>以「使用者行為」為軸心重整設計準則</li>
+                        <li>提供外部廠商設計指導並進行品質審查</li>
+                        <li>以資深設計師身份，從畫面提案到向高層簡報一手包辦</li>
                     </ul>
                 </div>
                 <div class="project-footer">
-                    <span class="view-details-btn">詳細を見る<span class="arrow">→</span></span>
+                    <span class="view-details-btn">查看詳情<span class="arrow">→</span></span>
                 </div>
             </div>
         </a>
 
-        <!-- Project 3: Eslite -->
-        <a href="eslite.html" class="project-card">
+        <!-- Project 4: Eslite -->
+        <a href="eslite-tw.html" class="project-card">
             <div class="project-image">
                 <img src="images/top3.png" alt="誠品線上">
             </div>
@@ -185,23 +174,20 @@
                     <span class="project-tag">2018 - 2021</span>
                     <span class="project-tag">Web Design</span>
                 </div>
-                <h3 class="project-title">誠品線上 ECサイト</h3>
+                <h3 class="project-title">誠品線上 電商網站</h3>
                 <p class="project-description">
-                    台湾の文化的書店ブランド「誠品」のECサイトリニューアル。
-                    書籍中心のネット書店から、ライフスタイル全般を扱うECサイトへと切り替え。
-                    サイト全体の方向性提案から、レスポンシブデザイン対応、
-                    購入フローの最適化まで幅広く担当しました。
+                    台灣知名書店品牌「誠品」電商網站改版。從以書籍為主的網路書店，轉型為涵蓋生活風格的全品類電商。網站整體方向規劃、響應式設計、結帳流程優化都在我的負責範圍內。
                 </p>
                 <div class="project-highlights">
                     <h4>Key Highlights</h4>
                     <ul>
-                        <li>書籍中心からライフスタイルECへのIA再設計を提案</li>
-                        <li>レスポンシブデザイン対応でモバイルユーザー体験を向上</li>
-                        <li>購入フローを3ステップに最適化</li>
+                        <li>從「書店版型」到「多品類電商架構」的 IA 重新設計</li>
+                        <li>響應式設計，提升行動版使用體驗</li>
+                        <li>結帳流程縮短至 3 步驟</li>
                     </ul>
                 </div>
                 <div class="project-footer">
-                    <span class="view-details-btn">詳細を見る<span class="arrow">→</span></span>
+                    <span class="view-details-btn">查看詳情<span class="arrow">→</span></span>
                 </div>
             </div>
         </a>
@@ -209,51 +195,50 @@
 </section>
 
 <!-- Landing Pages Section -->
-<!-- Landing Pages Section -->
 <section class="lp-section">
     <div class="section-header">
         <div class="section-title">Selected Landing Pages</div>
-        <p class="section-subtitle">誠品での販促キャンペーンLP - 多様なスタイルとテーマ</p>
+        <p class="section-subtitle">誠品線上活動行銷頁 — 多元風格與主題</p>
     </div>
 
     <div class="lp-grid">
         <div class="lp-card" onclick="openLightbox('images/l1.png')">
             <div class="lp-image">
-                <img src="images/ll1.png" alt="本屋で人間を観察する人類学者">
+                <img src="images/ll1.png" alt="在書店觀察人類的人類學家">
             </div>
             <div class="lp-content">
-                <h4 class="lp-title">本屋で人間を観察する人類学者</h4>
-                <p class="lp-description">書店での人間観察をテーマにした読書キャンペーン</p>
+                <h4 class="lp-title">在書店觀察人類的人類學家</h4>
+                <p class="lp-description">以書店人際觀察為主題的閱讀活動</p>
             </div>
         </div>
 
         <div class="lp-card" onclick="openLightbox('images/l2.png')">
             <div class="lp-image">
-                <img src="images/ll2.png" alt="そうだ、今も僕らは音楽を作っている">
+                <img src="images/ll2.png" alt="對了，我們還在做音樂">
             </div>
             <div class="lp-content">
-                <h4 class="lp-title">そうだ、今も僕らは音楽を作っている</h4>
-                <p class="lp-description">音楽をテーマにした商品プロモーション</p>
+                <h4 class="lp-title">對了，我們還在做音樂</h4>
+                <p class="lp-description">音樂主題商品行銷活動</p>
             </div>
         </div>
 
         <div class="lp-card" onclick="openLightbox('images/l3.png')">
             <div class="lp-image">
-                <img src="images/ll3.png" alt="映画とともに、春を迎える">
+                <img src="images/ll3.png" alt="和電影一起迎接春天">
             </div>
             <div class="lp-content">
-                <h4 class="lp-title">映画とともに、春を迎える</h4>
-                <p class="lp-description">春の映画キャンペーン - 季節感を演出</p>
+                <h4 class="lp-title">和電影一起迎接春天</h4>
+                <p class="lp-description">春日電影活動行銷頁</p>
             </div>
         </div>
 
         <div class="lp-card" onclick="openLightbox('images/l4.png')">
             <div class="lp-image">
-                <img src="images/ll4.png" alt="食べる、ゆえに我あり">
+                <img src="images/ll4.png" alt="我吃，故我在">
             </div>
             <div class="lp-content">
-                <h4 class="lp-title">食べる、ゆえに我あり</h4>
-                <p class="lp-description">食をテーマにした書籍・商品フェア</p>
+                <h4 class="lp-title">我吃，故我在</h4>
+                <p class="lp-description">飲食主題書籍與商品展覽活動</p>
             </div>
         </div>
     </div>
@@ -274,7 +259,6 @@
     }
 
     function closeLightbox(e) {
-        // 只有點擊背景時才關閉，點擊圖片不關閉
         if (e && e.target.id !== 'lightbox') {
             return;
         }
@@ -282,21 +266,18 @@
         document.body.style.overflow = 'auto';
     }
 
-    // ESC 鍵關閉
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') {
             closeLightbox();
         }
     });
 
-    // 點擊背景關閉
     document.getElementById('lightbox').addEventListener('click', function(e) {
         if (e.target === this) {
             closeLightbox();
         }
     });
 
-    // 點擊關閉按鈕
     document.querySelector('.lightbox-close').addEventListener('click', function(e) {
         e.stopPropagation();
         closeLightbox();
@@ -308,16 +289,15 @@
     <div class="section-header">
         <div class="section-title">About</div>
     </div>
-    
+
     <div class="about-intro-wrapper">
         <p class="about-intro">
-            私がデザイナーとして大切にしているのは、言葉や頭の中にあるイメージを、画面や操作できる形に変えていくことです。<br><br>
+            身為設計師，我在乎的是把腦中模糊的想像、嘴上說不清楚的需求，化成看得見、可以操作的畫面。<br><br>
 
-            デザインの課題は、言葉だけでは共有しづらく、人によってイメージがずれることがあります。<br>
-            だからこそ私は、関係者の考えを整理しながら、画面案やプロトタイプを通して、具体的に確認できる形にすることを大切にしています。<br><br>
+            設計問題很難光靠文字說清楚，每個人腦中浮現的畫面往往差了一截。所以我習慣先把各方的想法整理出來，透過畫面提案或原型，讓討論變得具體可以確認。<br><br>
 
-            提案やプロトタイプをもとに、ビジネス側・開発側・運用側など、異なる立場の人と対話し、試しながら調整していく。<br><br>
-            そのプロセスを通して、プロジェクトやプロダクトが少しずつ前に進む状態をつくっていきたいです。<br>
+            有了提案或原型，再和商業側、開發側、營運側等不同立場的人溝通、嘗試、調整。<br><br>
+            透過這樣的過程，讓專案和產品一步一步往前推進。<br>
         </p>
     </div>
 
@@ -380,3 +360,6 @@
         </div>
     </div>
 </section>
+
+</body>
+</html>
