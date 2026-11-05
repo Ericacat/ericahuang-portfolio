@@ -46,23 +46,8 @@
             </div>
 
             <div class="description-section">
-                <p>設計到前端實作，我全包。</p>
+                <p>設計到前端實作</p>
                 <p>針對產品目標，找出最適合的解決方案。</p>
-            </div>
-
-            <div class="stats">
-                <div class="stat-item">
-                    <div class="stat-number">10+</div>
-                    <div class="stat-label">年資</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">50+</div>
-                    <div class="stat-label">UI・Web 專案</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">N1</div>
-                    <div class="stat-label">日語能力</div>
-                </div>
             </div>
         </div>
     </div>
@@ -76,6 +61,25 @@
     </div>
 
     <div class="projects-grid">
+        <!-- NetKOREA -->
+        <a href="netkorea-tw.html" class="project-card">
+            <div class="project-image"><img src="images/top-n.png" alt="NetKOREA 韓語學習平台" loading="lazy" width="1078" height="1208"></div>
+            <div class="project-content">
+                <div class="project-meta"><span class="project-tag">Education Platform</span><span class="project-tag">2026</span><span class="project-tag">UI/UX Design</span></div>
+                <h3 class="project-title">NetKOREA 韓語學習平台</h3>
+                <p class="project-description">沿用 BizCHINA 的共用基礎，針對韓語學習服務重新設計介面。從服務介紹、教師搜尋與預約，到學員中心，設計一致的使用體驗，並已完成改版上線。</p>
+                <div class="project-highlights">
+                    <h4>Key Highlights</h4>
+                    <ul>
+                        <li>針對韓語學習服務重新設計視覺風格</li>
+                        <li>教師搜尋、預約與學員中心介面設計</li>
+                        <li>運用共用平台基礎延伸不同語言產品</li>
+                    </ul>
+                </div>
+                <div class="project-footer"><span class="view-details-btn">查看詳情<span class="arrow">→</span></span></div>
+            </div>
+        </a>
+
         <!-- Project 1: BizCHINA -->
         <a href="bizchina-tw.html" class="project-card">
             <div class="project-image">
@@ -118,7 +122,7 @@
                 </div>
                 <h3 class="project-title">BizCHINA 法人教育訓練管理系統</h3>
                 <p class="project-description">
-                    在既有的 B2C 教育平台上，新增法人教育訓練管理功能。過去全靠人工處理的每一道程序，現在都能在系統內統一管理。
+                    設計企業培訓的服務網站與管理功能，串連方案比較、導入諮詢、員工申請頁面建立與受訓管理的完整體驗。
                 </p>
                 <div class="project-highlights">
                     <h4>Key Highlights</h4>
@@ -197,11 +201,22 @@
 <!-- Landing Pages Section -->
 <section class="lp-section">
     <div class="section-header">
-        <div class="section-title">Selected Landing Pages</div>
-        <p class="section-subtitle">誠品線上活動行銷頁 — 多元風格與主題</p>
+        <div class="section-title">Selected Landing Pages & Visuals</div>
+        <p class="section-subtitle">服務與促銷活動的 Landing Pages、Banner 與插畫</p>
     </div>
 
     <div class="lp-grid">
+        <!-- BizCHINA Landing Page -->
+        <div class="lp-card" onclick="openLightbox('images/lp_design_bizchina.png', 'mobile')">
+            <div class="lp-image">
+                <img src="images/ll5.png" alt="BizCHINA 中文學習" loading="lazy">
+            </div>
+            <div class="lp-content">
+                <h4 class="lp-title">BizCHINA 中文學習</h4>
+                <p class="lp-description">線上中文課程體驗申請 Landing Page</p>
+            </div>
+        </div>
+
         <div class="lp-card" onclick="openLightbox('images/l1.png')">
             <div class="lp-image">
                 <img src="images/ll1.png" alt="在書店觀察人類的人類學家">
@@ -241,19 +256,42 @@
                 <p class="lp-description">飲食主題書籍與商品展覽活動</p>
             </div>
         </div>
+
+
+        <!-- Banners & Illustrations -->
+        <div class="lp-card" role="button" tabindex="0" onclick="openLightbox('images/banner-illustration-cover.png', 'gallery')" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }">
+            <div class="lp-image">
+                <img src="images/banner-illustration-cover.png" alt="Banner・插畫" loading="lazy" width="808" height="632">
+            </div>
+            <div class="lp-content">
+                <h4 class="lp-title">Banner・插畫</h4>
+                <p class="lp-description">語言學習與商品促銷視覺設計</p>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- Lightbox -->
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+<div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
     <span class="lightbox-close">&times;</span>
     <img class="lightbox-content" id="lightbox-img" alt="">
+    <div class="lightbox-gallery-content" aria-label="Banner・插畫">
+        <img src="images/banner-illustration-1.png" alt="Banner・插畫 1" loading="lazy" width="1200" height="1200">
+        <img src="images/banner-illustration-2.png" alt="Banner・插畫 2" loading="lazy" width="1200" height="1200">
+        <img src="images/banner-illustration-3.png" alt="Banner・插畫 3" loading="lazy" width="1920" height="1920">
+        <img src="images/banner-illustration-4.png" alt="Banner・插畫 4" loading="lazy" width="960" height="2730">
+        <img src="images/banner-illustration-5.png" alt="Banner・插畫 5" loading="lazy" width="960" height="4590">
+        <img src="images/banner-illustration-6.png" alt="Banner・插畫 6" loading="lazy" width="960" height="2903">
+    </div>
 </div>
 
 <script>
-    function openLightbox(imgSrc) {
+    function openLightbox(imgSrc, layout) {
         const lightbox = document.getElementById('lightbox');
+        lightbox.classList.toggle('lightbox-mobile-page', layout === 'mobile');
+        lightbox.classList.toggle('lightbox-gallery', layout === 'gallery');
         lightbox.style.display = 'block';
+        lightbox.scrollTop = 0;
         document.getElementById('lightbox-img').src = imgSrc;
         document.body.style.overflow = 'hidden';
     }

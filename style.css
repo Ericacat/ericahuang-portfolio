@@ -429,18 +429,51 @@ html {
 
 .lp-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .lp-card {
+    grid-column: span 2;
     background: var(--color-bg);
     border-radius: 12px;
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lp-card:nth-child(4):nth-last-child(2) {
+    grid-column: 2 / span 2;
+}
+
+.lp-card:nth-child(5):last-child {
+    grid-column: 4 / span 2;
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .lp-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .lp-card:nth-child(4):nth-last-child(2) {
+        grid-column: span 2;
+    }
+
+    .lp-card:nth-child(5):last-child {
+        grid-column: 2 / span 2;
+    }
+}
+
+@media (max-width: 640px) {
+    .lp-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .lp-grid > .lp-card {
+        grid-column: 1;
+    }
 }
 
 .lp-card:hover {
@@ -968,12 +1001,16 @@ footer {
 }
 
 @media (max-width: 640px) {
+    .project-highlights {
+        display: none;
+    }
+
     .hero-minimal {
         padding: 0 2rem;
     }
 
     .hero-content {
-        padding-top: 2rem;
+        padding-top: 0;
     }
 
     .decoration-container {
@@ -1056,6 +1093,45 @@ footer {
 }
 .lightbox-close:hover {
     color: var(--color-accent);
+}
+
+/* Keep mobile landing pages at a readable phone-like width. */
+.lightbox-mobile-page .lightbox-content {
+    width: calc(100% - 24px);
+    max-width: 440px;
+}
+
+.lightbox-gallery-content {
+    display: none;
+}
+
+.lightbox-gallery #lightbox-img {
+    display: none;
+}
+
+.lightbox-gallery .lightbox-gallery-content {
+    display: block;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    columns: 2;
+    column-gap: 24px;
+    cursor: default;
+}
+
+.lightbox-gallery-content img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+    break-inside: avoid;
+}
+
+@media (max-width: 640px) {
+    .lightbox-gallery .lightbox-gallery-content {
+        columns: 1;
+        width: 95%;
+    }
 }
 
 @keyframes fadeIn {

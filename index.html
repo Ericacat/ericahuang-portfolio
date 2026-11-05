@@ -60,21 +60,6 @@
                 <p>デザインからフロントエンド実装まで一貫して対応。</p>
                 <p>プロダクトの目標に応じて、最適な形で実現します。</p>
             </div>
-            
-            <div class="stats">
-                <div class="stat-item">
-                    <div class="stat-number">10+</div>
-                    <div class="stat-label">年の経験</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">50+</div>
-                    <div class="stat-label">UI・Web案件</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">N1</div>
-                    <div class="stat-label">日本語能力</div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -87,6 +72,25 @@
     </div>
 
     <div class="projects-grid">
+        <!-- NetKOREA -->
+        <a href="netkorea.html" class="project-card">
+            <div class="project-image"><img src="images/top-n.png" alt="NetKOREA 韓国語学習プラットフォーム" loading="lazy" width="1078" height="1208"></div>
+            <div class="project-content">
+                <div class="project-meta"><span class="project-tag">Education Platform</span><span class="project-tag">2026</span><span class="project-tag">UI/UX Design</span></div>
+                <h3 class="project-title">NetKOREA 韓国語学習プラットフォーム</h3>
+                <p class="project-description">BizCHINAの共通基盤を活かし、韓国語学習サービスのUIを再設計。サービス紹介から講師検索・予約、受講者マイページまで、一貫した体験を設計。リニューアルを完了し、公開済みです。</p>
+                <div class="project-highlights">
+                    <h4>Key Highlights</h4>
+                    <ul>
+                        <li>韓国語学習サービスに合わせたビジュアルの再設計</li>
+                        <li>講師検索・予約から受講管理までのUI設計</li>
+                        <li>共通基盤を活かしたプロダクト展開</li>
+                    </ul>
+                </div>
+                <div class="project-footer"><span class="view-details-btn">詳細を見る<span class="arrow">→</span></span></div>
+            </div>
+        </a>
+
         <!-- Project 1: BizCHINA -->
         <a href="bizchina.html" class="project-card">
             <div class="project-image">
@@ -129,7 +133,7 @@
                 </div>
                 <h3 class="project-title">BizCHINA 法人研修管理システム</h3>
                 <p class="project-description">
-                    今あるtoC教育プラットフォームに、法人向けの研修管理機能を追加。これまで担当者が手動で行っていた一つひとつの業務を、システム上でまとめて管理できるようにしました。
+                    企業向け研修のサービスサイトと管理機能を設計。研修プランの比較・導入相談から、申し込みページ作成・受講管理までをつなぐ体験を提案しました。
                 </p>
                 <div class="project-highlights">
                     <h4>Key Highlights</h4>
@@ -212,11 +216,22 @@
 <!-- Landing Pages Section -->
 <section class="lp-section">
     <div class="section-header">
-        <div class="section-title">Selected Landing Pages</div>
-        <p class="section-subtitle">誠品での販促キャンペーンLP - 多様なスタイルとテーマ</p>
+        <div class="section-title">Selected Landing Pages & Visuals</div>
+        <p class="section-subtitle">サービス・販促キャンペーンのLP、バナー・イラスト</p>
     </div>
 
     <div class="lp-grid">
+        <!-- BizCHINA Landing Page -->
+        <div class="lp-card" onclick="openLightbox('images/lp_design_bizchina.png', 'mobile')">
+            <div class="lp-image">
+                <img src="images/ll5.png" alt="BizCHINA 中国語学習" loading="lazy">
+            </div>
+            <div class="lp-content">
+                <h4 class="lp-title">BizCHINA 中国語学習</h4>
+                <p class="lp-description">オンライン中国語レッスンの体験申し込みLP</p>
+            </div>
+        </div>
+
         <div class="lp-card" onclick="openLightbox('images/l1.png')">
             <div class="lp-image">
                 <img src="images/ll1.png" alt="本屋で人間を観察する人類学者">
@@ -256,19 +271,42 @@
                 <p class="lp-description">食をテーマにした書籍・商品フェア</p>
             </div>
         </div>
+
+
+        <!-- Banners & Illustrations -->
+        <div class="lp-card" role="button" tabindex="0" onclick="openLightbox('images/banner-illustration-cover.png', 'gallery')" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }">
+            <div class="lp-image">
+                <img src="images/banner-illustration-cover.png" alt="バナー・イラスト" loading="lazy" width="808" height="632">
+            </div>
+            <div class="lp-content">
+                <h4 class="lp-title">バナー・イラスト</h4>
+                <p class="lp-description">語学学習・商品プロモーションのビジュアル制作</p>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- Lightbox -->
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+<div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
     <span class="lightbox-close">&times;</span>
     <img class="lightbox-content" id="lightbox-img" alt="">
+    <div class="lightbox-gallery-content" aria-label="バナー・イラスト">
+        <img src="images/banner-illustration-1.png" alt="バナー・イラスト 1" loading="lazy" width="1200" height="1200">
+        <img src="images/banner-illustration-2.png" alt="バナー・イラスト 2" loading="lazy" width="1200" height="1200">
+        <img src="images/banner-illustration-3.png" alt="バナー・イラスト 3" loading="lazy" width="1920" height="1920">
+        <img src="images/banner-illustration-4.png" alt="バナー・イラスト 4" loading="lazy" width="960" height="2730">
+        <img src="images/banner-illustration-5.png" alt="バナー・イラスト 5" loading="lazy" width="960" height="4590">
+        <img src="images/banner-illustration-6.png" alt="バナー・イラスト 6" loading="lazy" width="960" height="2903">
+    </div>
 </div>
 
 <script>
-    function openLightbox(imgSrc) {
+    function openLightbox(imgSrc, layout) {
         const lightbox = document.getElementById('lightbox');
+        lightbox.classList.toggle('lightbox-mobile-page', layout === 'mobile');
+        lightbox.classList.toggle('lightbox-gallery', layout === 'gallery');
         lightbox.style.display = 'block';
+        lightbox.scrollTop = 0;
         document.getElementById('lightbox-img').src = imgSrc;
         document.body.style.overflow = 'hidden';
     }

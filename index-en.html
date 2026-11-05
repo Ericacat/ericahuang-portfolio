@@ -51,21 +51,6 @@
                 <p>I handle both design and frontend coding.</p>
                 <p>I find the best solution for your product.</p>
             </div>
-
-            <div class="stats">
-                <div class="stat-item">
-                    <div class="stat-number">10+</div>
-                    <div class="stat-label">Years of Experience</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">50+</div>
-                    <div class="stat-label">UI & Web Projects</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">N1</div>
-                    <div class="stat-label">Japanese Proficiency</div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -78,6 +63,25 @@
     </div>
 
     <div class="projects-grid">
+        <!-- NetKOREA -->
+        <a href="netkorea-en.html" class="project-card">
+            <div class="project-image"><img src="images/top-n.png" alt="NetKOREA Korean Learning Platform" loading="lazy" width="1078" height="1208"></div>
+            <div class="project-content">
+                <div class="project-meta"><span class="project-tag">Education Platform</span><span class="project-tag">2026</span><span class="project-tag">UI/UX Design</span></div>
+                <h3 class="project-title">NetKOREA Korean Learning Platform</h3>
+                <p class="project-description">Building on the shared BizCHINA foundation, I redesigned the experience for Korean learners, from service discovery and instructor search to booking and the learner dashboard. The redesigned service is now live.</p>
+                <div class="project-highlights">
+                    <h4>Key Highlights</h4>
+                    <ul>
+                        <li>Visual redesign for a Korean learning service</li>
+                        <li>Instructor search, booking and learner dashboard design</li>
+                        <li>Product expansion using a shared platform foundation</li>
+                    </ul>
+                </div>
+                <div class="project-footer"><span class="view-details-btn">View Details<span class="arrow">→</span></span></div>
+            </div>
+        </a>
+
         <!-- Project 1: BizCHINA -->
         <a href="bizchina-en.html" class="project-card">
             <div class="project-image">
@@ -120,7 +124,7 @@
                 </div>
                 <h3 class="project-title">BizCHINA Corporate Training Management</h3>
                 <p class="project-description">
-                    I added a corporate training management feature to an existing B2C education platform. Tasks that managers used to handle manually can now be done entirely within the system.
+                    I designed the corporate training website and management features, connecting service discovery and plan comparison with application-page creation and training management.
                 </p>
                 <div class="project-highlights">
                     <h4>Key Highlights</h4>
@@ -199,11 +203,22 @@
 <!-- Landing Pages Section -->
 <section class="lp-section">
     <div class="section-header">
-        <div class="section-title">Selected Landing Pages</div>
-        <p class="section-subtitle">Campaign landing pages at Eslite — various styles and themes</p>
+        <div class="section-title">Selected Landing Pages & Visuals</div>
+        <p class="section-subtitle">Landing pages, banners and illustrations for services and campaigns</p>
     </div>
 
     <div class="lp-grid">
+        <!-- BizCHINA Landing Page -->
+        <div class="lp-card" onclick="openLightbox('images/lp_design_bizchina.png', 'mobile')">
+            <div class="lp-image">
+                <img src="images/ll5.png" alt="BizCHINA Chinese Learning" loading="lazy">
+            </div>
+            <div class="lp-content">
+                <h4 class="lp-title">BizCHINA Chinese Learning</h4>
+                <p class="lp-description">Trial sign-up landing page for online Chinese lessons</p>
+            </div>
+        </div>
+
         <div class="lp-card" onclick="openLightbox('images/l1.png')">
             <div class="lp-image">
                 <img src="images/ll1.png" alt="The Anthropologist in the Bookstore">
@@ -243,19 +258,42 @@
                 <p class="lp-description">A food-themed book and goods fair</p>
             </div>
         </div>
+
+
+        <!-- Banners & Illustrations -->
+        <div class="lp-card" role="button" tabindex="0" onclick="openLightbox('images/banner-illustration-cover.png', 'gallery')" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }">
+            <div class="lp-image">
+                <img src="images/banner-illustration-cover.png" alt="Banners & Illustrations" loading="lazy" width="808" height="632">
+            </div>
+            <div class="lp-content">
+                <h4 class="lp-title">Banners & Illustrations</h4>
+                <p class="lp-description">Visual designs for language learning and product campaigns</p>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- Lightbox -->
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+<div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
     <span class="lightbox-close">&times;</span>
     <img class="lightbox-content" id="lightbox-img" alt="">
+    <div class="lightbox-gallery-content" aria-label="Banners & Illustrations">
+        <img src="images/banner-illustration-1.png" alt="Banners & Illustrations 1" loading="lazy" width="1200" height="1200">
+        <img src="images/banner-illustration-2.png" alt="Banners & Illustrations 2" loading="lazy" width="1200" height="1200">
+        <img src="images/banner-illustration-3.png" alt="Banners & Illustrations 3" loading="lazy" width="1920" height="1920">
+        <img src="images/banner-illustration-4.png" alt="Banners & Illustrations 4" loading="lazy" width="960" height="2730">
+        <img src="images/banner-illustration-5.png" alt="Banners & Illustrations 5" loading="lazy" width="960" height="4590">
+        <img src="images/banner-illustration-6.png" alt="Banners & Illustrations 6" loading="lazy" width="960" height="2903">
+    </div>
 </div>
 
 <script>
-    function openLightbox(imgSrc) {
+    function openLightbox(imgSrc, layout) {
         const lightbox = document.getElementById('lightbox');
+        lightbox.classList.toggle('lightbox-mobile-page', layout === 'mobile');
+        lightbox.classList.toggle('lightbox-gallery', layout === 'gallery');
         lightbox.style.display = 'block';
+        lightbox.scrollTop = 0;
         document.getElementById('lightbox-img').src = imgSrc;
         document.body.style.overflow = 'hidden';
     }
