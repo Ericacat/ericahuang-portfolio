@@ -1097,7 +1097,7 @@ footer {
 
 /* Keep mobile landing pages at a readable phone-like width. */
 .lightbox-mobile-page .lightbox-content {
-    width: calc(100% - 24px);
+    width: 50%;
     max-width: 440px;
 }
 
