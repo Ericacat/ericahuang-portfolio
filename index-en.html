@@ -3,11 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Erica Huang - Product Designer</title>
+<title>黃楉婷 (Erica Huang) - Product Designer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home-base.css">
+<link rel="stylesheet" href="career-timeline.css">
+<link rel="stylesheet" href="home.css">
 </head>
 <body>
 
@@ -23,7 +26,7 @@
 <!-- Hero Section -->
 <section class="hero-minimal">
     <div class="hero-content">
-        <!-- Left: lamp + title -->
+        <!-- 左側：燈 + 標題 -->
         <div class="hero-left">
             <div class="decoration-container">
                 <img src="lamp.svg" alt="">
@@ -36,7 +39,7 @@
             </h1>
         </div>
 
-        <!-- Right: name + description + stats -->
+        <!-- 右側：名字 + 說明 + 數據 -->
         <div class="hero-right">
             <div class="name-section">
                 <div class="name-jp">
@@ -55,162 +58,133 @@
     </div>
 </section>
 
-<!-- Featured Projects -->
-<section id="projects" class="section">
-    <div class="section-header">
-        <div class="section-title">Featured Projects</div>
-        <p class="section-subtitle">A selection of my featured work</p>
-    </div>
-
-    <div class="projects-grid">
-        <!-- NetKOREA -->
-        <a href="netkorea-en.html" class="project-card">
-            <div class="project-image"><img src="images/top-n.png" alt="NetKOREA Korean Learning Platform" loading="lazy" width="1078" height="1208"></div>
-            <div class="project-content">
-                <div class="project-meta"><span class="project-tag">Education Platform</span><span class="project-tag">2026</span><span class="project-tag">UI/UX Design</span></div>
-                <h3 class="project-title">NetKOREA Korean Learning Platform</h3>
-                <p class="project-description">Building on the shared BizCHINA foundation, I redesigned the experience for Korean learners, from service discovery and instructor search to booking and the learner dashboard. The redesigned service is now live.</p>
-                <div class="project-highlights">
-                    <h4>Key Highlights</h4>
-                    <ul>
-                        <li>Visual redesign for a Korean learning service</li>
-                        <li>Instructor search, booking and learner dashboard design</li>
-                        <li>Product expansion using a shared platform foundation</li>
-                    </ul>
-                </div>
-                <div class="project-footer"><span class="view-details-btn">View Details<span class="arrow">→</span></span></div>
-            </div>
-        </a>
-
-        <!-- Project 1: BizCHINA -->
-        <a href="bizchina-en.html" class="project-card">
-            <div class="project-image">
-                <img src="images/top1.png" alt="BizCHINA">
-            </div>
-            <div class="project-content">
-                <div class="project-meta">
-                    <span class="project-tag">Education Platform</span>
-                    <span class="project-tag">2024 – Present</span>
-                    <span class="project-tag">Design + Frontend</span>
-                </div>
-                <h3 class="project-title">BizCHINA Education Platform</h3>
-                <p class="project-description">
-                    I worked in a 6-person team. I did both UI/UX design and Vue.js coding. Because I handled both jobs, there were no extra check steps. The result matched the design exactly.
-                </p>
-                <div class="project-highlights">
-                    <h4>Key Highlights</h4>
-                    <ul>
-                        <li>Brand refresh and full site redesign</li>
-                        <li>Frontend coding with Vue.js + uni-app</li>
-                        <li>Simpler sign-up flow led to fewer support questions</li>
-                    </ul>
-                </div>
-                <div class="project-footer">
-                    <span class="view-details-btn">View Details<span class="arrow">→</span></span>
-                </div>
-            </div>
-        </a>
-
-        <!-- Project 2: BizCHINA Corporate -->
-        <a href="bizchina-houjin-en.html" class="project-card">
-            <div class="project-image">
-                <img src="images/top4.png" alt="BizCHINA Corporate Training Management">
-            </div>
-            <div class="project-content">
-                <div class="project-meta">
-                    <span class="project-tag">Business System</span>
-                    <span class="project-tag">2024 – Present</span>
-                    <span class="project-tag">UI/UX Design</span>
-                </div>
-                <h3 class="project-title">BizCHINA Corporate Training Management</h3>
-                <p class="project-description">
-                    I designed the corporate training website and management features, connecting service discovery and plan comparison with application-page creation and training management.
-                </p>
-                <div class="project-highlights">
-                    <h4>Key Highlights</h4>
-                    <ul>
-                        <li>Application page managers can set up and publish themselves</li>
-                        <li>Dashboard designed to show completion status at a glance</li>
-                        <li>Automated reminders that take the awkwardness out of following up</li>
-                    </ul>
-                </div>
-                <div class="project-footer">
-                    <span class="view-details-btn">View Details<span class="arrow">→</span></span>
-                </div>
-            </div>
-        </a>
-
-        <!-- Project 3: TaipeiPASS -->
-        <a href="taipeipass-en.html" class="project-card">
-            <div class="project-image">
-                <img src="images/top2.png" alt="TaipeiPASS">
-            </div>
-            <div class="project-content">
-                <div class="project-meta">
-                    <span class="project-tag">Government Platform</span>
-                    <span class="project-tag">2022 – 2023</span>
-                    <span class="project-tag">UI/UX Design</span>
-                </div>
-                <h3 class="project-title">TaipeiPASS</h3>
-                <p class="project-description">
-                    This is the official app and website of Taipei City Government. I designed new features and helped keep the design quality the same across many teams.
-                </p>
-                <div class="project-highlights">
-                    <h4>Key Highlights</h4>
-                    <ul>
-                        <li>Updated design guidelines based on user behavior</li>
-                        <li>Design guidance and quality checks for outside vendors</li>
-                        <li>Presented screen designs to managers and leaders</li>
-                    </ul>
-                </div>
-                <div class="project-footer">
-                    <span class="view-details-btn">View Details<span class="arrow">→</span></span>
-                </div>
-            </div>
-        </a>
-
-        <!-- Project 3: Eslite -->
-        <a href="eslite-en.html" class="project-card">
-            <div class="project-image">
-                <img src="images/top3.png" alt="Eslite Online">
-            </div>
-            <div class="project-content">
-                <div class="project-meta">
-                    <span class="project-tag">E-Commerce</span>
-                    <span class="project-tag">2018 – 2021</span>
-                    <span class="project-tag">Web Design</span>
-                </div>
-                <h3 class="project-title">Eslite Online EC Site</h3>
-                <p class="project-description">
-                    I redesigned the online store of Taiwan's famous bookstore brand Eslite. The store changed from selling books only to a full lifestyle shop. I worked on the design, mobile layout, and the buying steps.
-                </p>
-                <div class="project-highlights">
-                    <h4>Key Highlights</h4>
-                    <ul>
-                        <li>New site structure for lifestyle products, not just books</li>
-                        <li>Better mobile experience with responsive design</li>
-                        <li>Made the buying steps shorter — only 3 steps</li>
-                    </ul>
-                </div>
-                <div class="project-footer">
-                    <span class="view-details-btn">View Details<span class="arrow">→</span></span>
-                </div>
-            </div>
-        </a>
+<section class="home-capabilities" aria-label="Capabilities">
+    <div class="capability-overview">
+        <ul class="capability-list">
+            <li class="capability-item">
+                <svg class="capability-art" viewBox="0 0 80 76" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="17" y="10" width="46" height="53" rx="5"/><path d="M29 10v-2h22v9H29v-7M27 29h26M27 39h26M27 49h17"/></svg>
+                <h4>Planning</h4>
+                <p>Requirements & planning</p>
+            </li>
+            <li class="capability-item">
+                <svg class="capability-art" viewBox="0 0 80 76" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="24" width="27" height="34" rx="4"/><rect x="49" y="24" width="22" height="34" rx="4"/><path d="M15 34h15M15 42h9M39 40h7m-4-4 4 4-4 4M52 6l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/></svg>
+                <h4>AI Prototyping</h4>
+                <p>From wireframes to prototypes with AI</p>
+            </li>
+            <li class="capability-item">
+                <svg class="capability-art" viewBox="0 0 80 76" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="13" y="12" width="54" height="42" rx="5"/><path d="M13 24h54M25 24v30M32 33h25M32 41h17"/></svg>
+                <h4>UI Design</h4>
+                <p>Interface & interaction design in Figma</p>
+            </li>
+            <li class="capability-item">
+                <svg class="capability-art" viewBox="0 0 80 76" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="13" y="12" width="54" height="46" rx="5"/><circle cx="29" cy="27" r="5"/><path d="m15 51 16-14 11 9 10-15 13 20"/></svg>
+                <h4>Visual Design</h4>
+                <p>Photoshop & Illustrator</p>
+            </li>
+            <li class="capability-item">
+                <svg class="capability-art" viewBox="0 0 80 76" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="12" width="60" height="42" rx="5"/><path d="m31 25-9 8 9 8m18-16 9 8-9 8M44 23l-8 20M28 61h24M40 54v7"/></svg>
+                <h4>Frontend</h4>
+                <p>Implementation with Vue.js & CSS</p>
+            </li>
+            <li class="capability-item">
+                <svg class="capability-art" viewBox="0 0 80 76" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="16" width="25" height="36" rx="4"/><rect x="48" y="16" width="25" height="36" rx="4"/><path d="M33 28h15m-5-5 5 5-5 5M48 42H33m5-5-5 5 5 5M15 25h10M56 25h9M56 33h9M56 41h9"/></svg>
+                <h4>Backend Collaboration</h4>
+                <p>Specifications & backend integration</p>
+            </li>
+            <li class="capability-item">
+                <svg class="capability-art" viewBox="0 0 80 76" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="12" width="60" height="43" rx="5"/><path d="M10 23h60M29 36a13 13 0 0 1 22-2l3 4m0-9v9h-9M51 44a13 13 0 0 1-22 2l-3-4m0 9v-9h9"/></svg>
+                <h4>Site Maintenance</h4>
+                <p>Website updates & maintenance</p>
+            </li>
+        </ul>
     </div>
 </section>
 
-<!-- Landing Pages Section -->
-<section class="lp-section">
-    <div class="section-header">
-        <div class="section-title">Selected Landing Pages & Visuals</div>
-        <p class="section-subtitle">Landing pages, banners and illustrations for services and campaigns</p>
+<!-- Featured Projects: scroll-driven preview -->
+
+<section id="projects" class="scroll-projects" aria-label="Selected projects">
+
+    <div class="scroll-projects-layout"><div class="scroll-work-stories"><article class="scroll-work" aria-labelledby="work-title-0">
+        <a class="scroll-mobile-image" href="netkorea-en.html"><img src="images/top-n.png" alt="NetKOREA Korean Learning Platform" loading="lazy"></a>
+        <div class="scroll-work-details"><p class="scroll-work-role">UI/UX Design + Frontend</p><p class="scroll-work-meta"><span>2026</span></p></div>
+        <h3 id="work-title-0">NetKOREA</h3>
+        <p class="scroll-work-subtitle">Korean Learning Platform</p>
+        <p class="scroll-work-description">Building on the shared BizCHINA foundation, I redesigned the experience for Korean learners, from service discovery and instructor search to booking and the learner dashboard. The redesigned service is now live.</p>
+        <a class="scroll-work-link" href="netkorea-en.html">View project <span aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-5-5 5 5-5 5"/></svg></span></a>
+    </article>
+<article class="scroll-work" aria-labelledby="work-title-1">
+        <a class="scroll-mobile-image" href="bizchina-en.html"><img src="images/top1.png" alt="BizCHINA" loading="lazy"></a>
+        <div class="scroll-work-details"><p class="scroll-work-role">Design + Frontend</p><p class="scroll-work-meta"><span>2024 – Present</span></p></div>
+        <h3 id="work-title-1">BizCHINA</h3>
+        <p class="scroll-work-subtitle">Chinese Learning Platform</p>
+        <p class="scroll-work-description">
+                    I worked in a 6-person team. I did both UI/UX design and Vue.js coding. Because I handled both jobs, there were no extra check steps. The result matched the design exactly.
+                </p>
+        <a class="scroll-work-link" href="bizchina-en.html">View project <span aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-5-5 5 5-5 5"/></svg></span></a>
+    </article>
+<article class="scroll-work" aria-labelledby="work-title-2">
+        <a class="scroll-mobile-image" href="bizchina-houjin-en.html"><img src="images/top4.png" alt="BizCHINA Corporate Training Management" loading="lazy"></a>
+        <div class="scroll-work-details"><p class="scroll-work-role">UI/UX Design</p><p class="scroll-work-meta"><span>2024 – Present</span></p></div>
+        <h3 id="work-title-2">BizCHINA for Business</h3>
+        <p class="scroll-work-subtitle">Corporate Training Management</p>
+        <p class="scroll-work-description">
+                    I designed the corporate training website and management features, connecting service discovery and plan comparison with application-page creation and training management.
+                </p>
+        <a class="scroll-work-link" href="bizchina-houjin-en.html">View project <span aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-5-5 5 5-5 5"/></svg></span></a>
+    </article>
+<article class="scroll-work" aria-labelledby="work-title-3">
+        <a class="scroll-mobile-image" href="taipeipass-en.html"><img src="images/top2.png" alt="TaipeiPASS" loading="lazy"></a>
+        <div class="scroll-work-details"><p class="scroll-work-role">UI/UX Design</p><p class="scroll-work-meta"><span>2022 – 2023</span></p></div>
+        <h3 id="work-title-3">TaipeiPASS</h3>
+        <p class="scroll-work-subtitle">Taipei City Citizen Services</p>
+        <p class="scroll-work-description">
+                    This is the official app and website of Taipei City Government. I designed new features and helped keep the design quality the same across many teams.
+                </p>
+        <a class="scroll-work-link" href="taipeipass-en.html">View project <span aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-5-5 5 5-5 5"/></svg></span></a>
+    </article>
+<article class="scroll-work" aria-labelledby="work-title-4">
+        <a class="scroll-mobile-image" href="eslite-en.html"><img src="images/top3.png" alt="Eslite Online" loading="lazy"></a>
+        <div class="scroll-work-details"><p class="scroll-work-role">Web Design</p><p class="scroll-work-meta"><span>2018 – 2021</span></p></div>
+        <h3 id="work-title-4">Eslite Online</h3>
+        <p class="scroll-work-subtitle">Lifestyle E-Commerce</p>
+        <p class="scroll-work-description">
+                    I redesigned the online store of Taiwan's famous bookstore brand Eslite. The store changed from selling books only to a full lifestyle shop. I worked on the design, mobile layout, and the buying steps.
+                </p>
+        <a class="scroll-work-link" href="eslite-en.html">View project <span aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-5-5 5 5-5 5"/></svg></span></a>
+    </article></div>
+    <div class="scroll-work-stage" aria-label="Project preview"><div class="scroll-work-frame"><a href="netkorea-en.html" class="scroll-work-visual is-active" aria-label="NetKOREA View project" aria-hidden="false" tabindex="0"><img src="images/top-n.png" alt="NetKOREA Korean Learning Platform" loading="eager"></a>
+<a href="bizchina-en.html" class="scroll-work-visual" aria-label="BizCHINA View project" aria-hidden="true" tabindex="-1"><img src="images/top1.png" alt="BizCHINA" loading="eager"></a>
+<a href="bizchina-houjin-en.html" class="scroll-work-visual" aria-label="BizCHINA for Business View project" aria-hidden="true" tabindex="-1"><img src="images/top4.png" alt="BizCHINA Corporate Training Management" loading="eager"></a>
+<a href="taipeipass-en.html" class="scroll-work-visual" aria-label="TaipeiPASS View project" aria-hidden="true" tabindex="-1"><img src="images/top2.png" alt="TaipeiPASS" loading="eager"></a>
+<a href="eslite-en.html" class="scroll-work-visual" aria-label="Eslite Online View project" aria-hidden="true" tabindex="-1"><img src="images/top3.png" alt="Eslite Online" loading="eager"></a></div></div></div>
+</section>
+<script src="home.js" defer></script>
+
+<!-- Career Timeline -->
+<section id="experience" class="career-timeline" aria-labelledby="experience-title">
+    <div class="career-header">
+        <h2 id="experience-title" class="career-title">Experience</h2>
+        <p class="career-subtitle">Connecting design and implementation across different fields.</p>
+    </div>
+    <ol class="career-list">
+        <li><span class="career-live" aria-hidden="true"></span><p class="career-date">2024.02 — Present<span>Japan</span></p><div><h3>Netstar Co., Ltd.</h3><p class="career-role">Product Designer</p><p>I design websites and management interfaces for the BizCHINA education platform, covering corporate training workflows, UI/UX design, frontend implementation, and ongoing improvements.</p><div class="career-projects"><a href="bizchina-en.html" class="career-link">BizCHINA <span aria-hidden="true">↗</span></a> <a href="netkorea-en.html" class="career-link">NetKOREA <span aria-hidden="true">↗</span></a> <a href="bizchina-houjin-en.html" class="career-link">BizCHINA for Business <span aria-hidden="true">↗</span></a></div></div></li>
+        <li><p class="career-date">2022.01 — 2023.08<span>Taiwan</span></p><div><h3>Blue Planet</h3><p class="career-role">UI/UX Designer</p><p>I designed app and web experiences for TaipeiPASS, Taipei City’s official citizen service. My work included rebuilding design guidelines and coordinating design quality across development teams and external vendors.</p><a href="taipeipass-en.html" class="career-link">TaipeiPASS <span aria-hidden="true">↗</span></a></div></li>
+        <li><p class="career-date">2018.04 — 2021.09<span>Taiwan</span></p><div><h3>Eslite</h3><p class="career-role">UI/UX Designer</p><p>I designed the Eslite Online e-commerce website and app, helping reshape its information architecture and purchase flow as it evolved from an online bookstore into a lifestyle marketplace.</p><a href="eslite-en.html" class="career-link">Eslite Online <span aria-hidden="true">↗</span></a></div></li>
+    </ol>
+    <div class="career-earlier"><p>Earlier experience</p><p>At Taiwan Rakuten Ichiba and Far Eastern Digital Technology, I created landing pages, banners, and websites across different industries, building a foundation in visual and web design.</p></div>
+</section>
+
+<section class="lp-section" aria-labelledby="visuals-title">
+    <div class="section-header home-section-header">
+        <h2 id="visuals-title" class="home-section-title">Landing Pages & Visuals</h2>
+        <p class="home-section-description">Landing pages, banners and illustrations for services and campaigns</p>
     </div>
 
     <div class="lp-grid">
         <!-- BizCHINA Landing Page -->
-        <div class="lp-card" onclick="openLightbox('images/lp_design_bizchina.png', 'mobile')">
+        <div class="lp-card" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" onclick="openLightbox('images/lp_design_bizchina.png', 'mobile')" title="Enlarge image">
             <div class="lp-image">
+                <span class="lp-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M10.5 7.5v6m-3-3h6"/></svg></span>
                 <img src="images/ll5.png" alt="BizCHINA Chinese Learning" loading="lazy">
             </div>
             <div class="lp-content">
@@ -219,8 +193,9 @@
             </div>
         </div>
 
-        <div class="lp-card" onclick="openLightbox('images/l1.png')">
+        <div class="lp-card" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" onclick="openLightbox('images/l1.png')" title="Enlarge image">
             <div class="lp-image">
+                <span class="lp-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M10.5 7.5v6m-3-3h6"/></svg></span>
                 <img src="images/ll1.png" alt="The Anthropologist in the Bookstore">
             </div>
             <div class="lp-content">
@@ -229,8 +204,9 @@
             </div>
         </div>
 
-        <div class="lp-card" onclick="openLightbox('images/l2.png')">
+        <div class="lp-card" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" onclick="openLightbox('images/l2.png')" title="Enlarge image">
             <div class="lp-image">
+                <span class="lp-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M10.5 7.5v6m-3-3h6"/></svg></span>
                 <img src="images/ll2.png" alt="Yes, We're Still Making Music">
             </div>
             <div class="lp-content">
@@ -239,8 +215,9 @@
             </div>
         </div>
 
-        <div class="lp-card" onclick="openLightbox('images/l3.png')">
+        <div class="lp-card" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" onclick="openLightbox('images/l3.png')" title="Enlarge image">
             <div class="lp-image">
+                <span class="lp-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M10.5 7.5v6m-3-3h6"/></svg></span>
                 <img src="images/ll3.png" alt="Welcome Spring with Cinema">
             </div>
             <div class="lp-content">
@@ -249,8 +226,9 @@
             </div>
         </div>
 
-        <div class="lp-card" onclick="openLightbox('images/l4.png')">
+        <div class="lp-card" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" onclick="openLightbox('images/l4.png')" title="Enlarge image">
             <div class="lp-image">
+                <span class="lp-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M10.5 7.5v6m-3-3h6"/></svg></span>
                 <img src="images/ll4.png" alt="I Eat, Therefore I Am">
             </div>
             <div class="lp-content">
@@ -261,8 +239,9 @@
 
 
         <!-- Banners & Illustrations -->
-        <div class="lp-card" role="button" tabindex="0" onclick="openLightbox('images/banner-illustration-cover.png', 'gallery')" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }">
+        <div class="lp-card" role="button" tabindex="0" onclick="openLightbox('images/banner-illustration-cover.png', 'gallery')" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" title="Enlarge image">
             <div class="lp-image">
+                <span class="lp-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M10.5 7.5v6m-3-3h6"/></svg></span>
                 <img src="images/banner-illustration-cover.png" alt="Banners & Illustrations" loading="lazy" width="808" height="632">
             </div>
             <div class="lp-content">
@@ -311,6 +290,7 @@
     }
 
     function closeLightbox(e) {
+        // 只有點擊背景時才關閉，點擊圖片不關閉
         if (e && e.target.id !== 'lightbox') {
             return;
         }
@@ -318,28 +298,32 @@
         document.body.style.overflow = 'auto';
     }
 
+    // ESC 鍵關閉
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') {
             closeLightbox();
         }
     });
 
+    // 點擊背景關閉
     document.getElementById('lightbox').addEventListener('click', function(e) {
         if (e.target === this) {
             closeLightbox();
         }
     });
 
+    // 點擊關閉按鈕
     document.querySelector('.lightbox-close').addEventListener('click', function(e) {
         e.stopPropagation();
         closeLightbox();
     });
 </script>
 
+
 <!-- About Section -->
-<section id="about" class="about-section">
-    <div class="section-header">
-        <div class="section-title">About</div>
+<section id="about" class="about-section" aria-labelledby="about-title">
+    <div class="section-header home-section-header">
+        <h2 id="about-title" class="home-section-title">About</h2>
     </div>
 
     <div class="about-intro-wrapper">
@@ -352,66 +336,13 @@
             Based on proposals and prototypes, I communicate with people from different roles, such as business, development, and operations, and improve ideas step by step.<br><br>
             Through this process, I want to help projects and products move forward little by little.<br>
         </p>
+        <a id="contact" href="mailto:ericacat.jp@gmail.com" class="about-email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+            <span>ericacat.jp@gmail.com</span>
+        </a>
     </div>
 
-    <div class="skills-grid">
-        <div class="skill-category">
-            <span class="skill-icon">🎨</span>
-            <h4>Design</h4>
-            <ul class="skill-list">
-                <li>UI/UX Design</li>
-                <li>Product Design</li>
-                <li>Design System</li>
-                <li>Prototyping</li>
-                <li>User Research</li>
-                <li>Accessibility Design</li>
-            </ul>
-        </div>
-        <div class="skill-category">
-            <span class="skill-icon">🛠️</span>
-            <h4>Tools</h4>
-            <ul class="skill-list">
-                <li>Figma</li>
-                <li>Adobe XD</li>
-                <li>Photoshop</li>
-                <li>Illustrator</li>
-            </ul>
-        </div>
-        <div class="skill-category">
-            <span class="skill-icon">💻</span>
-            <h4>Development</h4>
-            <ul class="skill-list">
-                <li>HTML / CSS / JavaScript</li>
-                <li>Vue.js</li>
-                <li>Responsive Design</li>
-                <li>WeChat Mini Program</li>
-            </ul>
-        </div>
-        <div class="skill-category">
-            <span class="skill-icon">📊</span>
-            <h4>Experience</h4>
-            <ul class="skill-list">
-                <li>E-Commerce Design</li>
-                <li>Education Platform</li>
-                <li>Government Platform</li>
-                <li>Landing Page Design</li>
-                <li>Cross-functional Collaboration</li>
-            </ul>
-        </div>
-    </div>
-</section>
 
-<!-- Contact Section -->
-<section id="contact" class="contact-section">
-    <div class="contact-content">
-        <div class="section-title">Contact</div>
-        <div class="contact-links">
-            <a href="mailto:ericacat.jp@gmail.com" class="contact-link">
-                <span>✉️</span>
-                <span>ericacat.jp@gmail.com</span>
-            </a>
-        </div>
-    </div>
 </section>
 
 </body>

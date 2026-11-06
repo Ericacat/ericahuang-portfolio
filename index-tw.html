@@ -8,6 +8,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home-base.css">
+<link rel="stylesheet" href="career-timeline.css">
+<link rel="stylesheet" href="home.css">
 </head>
 <body>
 
@@ -23,6 +26,7 @@
 <!-- Hero Section -->
 <section class="hero-minimal">
     <div class="hero-content">
+        <!-- 左側：燈 + 標題 -->
         <div class="hero-left">
             <div class="decoration-container">
                 <img src="lamp.svg" alt="">
@@ -35,6 +39,7 @@
             </h1>
         </div>
 
+        <!-- 右側：名字 + 說明 + 數據 -->
         <div class="hero-right">
             <div class="name-section">
                 <div class="name-jp">
@@ -53,162 +58,133 @@
     </div>
 </section>
 
-<!-- Featured Projects -->
-<section id="projects" class="section">
-    <div class="section-header">
-        <div class="section-title">Featured Projects</div>
-        <p class="section-subtitle">精選作品介紹</p>
-    </div>
-
-    <div class="projects-grid">
-        <!-- NetKOREA -->
-        <a href="netkorea-tw.html" class="project-card">
-            <div class="project-image"><img src="images/top-n.png" alt="NetKOREA 韓語學習平台" loading="lazy" width="1078" height="1208"></div>
-            <div class="project-content">
-                <div class="project-meta"><span class="project-tag">Education Platform</span><span class="project-tag">2026</span><span class="project-tag">UI/UX Design</span></div>
-                <h3 class="project-title">NetKOREA 韓語學習平台</h3>
-                <p class="project-description">沿用 BizCHINA 的共用基礎，針對韓語學習服務重新設計介面。從服務介紹、教師搜尋與預約，到學員中心，設計一致的使用體驗，並已完成改版上線。</p>
-                <div class="project-highlights">
-                    <h4>Key Highlights</h4>
-                    <ul>
-                        <li>針對韓語學習服務重新設計視覺風格</li>
-                        <li>教師搜尋、預約與學員中心介面設計</li>
-                        <li>運用共用平台基礎延伸不同語言產品</li>
-                    </ul>
-                </div>
-                <div class="project-footer"><span class="view-details-btn">查看詳情<span class="arrow">→</span></span></div>
-            </div>
-        </a>
-
-        <!-- Project 1: BizCHINA -->
-        <a href="bizchina-tw.html" class="project-card">
-            <div class="project-image">
-                <img src="images/top1.png" alt="BizCHINA">
-            </div>
-            <div class="project-content">
-                <div class="project-meta">
-                    <span class="project-tag">Education Platform</span>
-                    <span class="project-tag">2024 - 至今</span>
-                    <span class="project-tag">Design + Frontend</span>
-                </div>
-                <h3 class="project-title">BizCHINA 商業中文學習平台</h3>
-                <p class="project-description">
-                    在一支六人小團隊裡，UI/UX 設計到 Vue.js 實作全部自己包。因為設計和開發都在同一人手上，省去了設計審查的往返，最終成品和設計稿完全一致。
-                </p>
-                <div class="project-highlights">
-                    <h4>Key Highlights</h4>
-                    <ul>
-                        <li>品牌翻新與全站重新設計</li>
-                        <li>Vue.js + uni-app 前端實作</li>
-                        <li>優化入會流程，大幅降低客服諮詢量</li>
-                    </ul>
-                </div>
-                <div class="project-footer">
-                    <span class="view-details-btn">查看詳情<span class="arrow">→</span></span>
-                </div>
-            </div>
-        </a>
-
-        <!-- Project 2: BizCHINA 法人 -->
-        <a href="bizchina-houjin-tw.html" class="project-card">
-            <div class="project-image">
-                <img src="images/top4.png" alt="BizCHINA 法人教育訓練管理系統">
-            </div>
-            <div class="project-content">
-                <div class="project-meta">
-                    <span class="project-tag">Business System</span>
-                    <span class="project-tag">2024 - 至今</span>
-                    <span class="project-tag">UI/UX Design</span>
-                </div>
-                <h3 class="project-title">BizCHINA 法人教育訓練管理系統</h3>
-                <p class="project-description">
-                    設計企業培訓的服務網站與管理功能，串連方案比較、導入諮詢、員工申請頁面建立與受訓管理的完整體驗。
-                </p>
-                <div class="project-highlights">
-                    <h4>Key Highlights</h4>
-                    <ul>
-                        <li>主管可自行設定並發布員工申請頁面</li>
-                        <li>一眼掌握受訓狀況的儀表板設計</li>
-                        <li>通知自動化，省去追蹤的心理負擔</li>
-                    </ul>
-                </div>
-                <div class="project-footer">
-                    <span class="view-details-btn">查看詳情<span class="arrow">→</span></span>
-                </div>
-            </div>
-        </a>
-
-        <!-- Project 3: TaipeiPASS -->
-        <a href="taipeipass-tw.html" class="project-card">
-            <div class="project-image">
-                <img src="images/top2.png" alt="台北通">
-            </div>
-            <div class="project-content">
-                <div class="project-meta">
-                    <span class="project-tag">Government Platform</span>
-                    <span class="project-tag">2022 - 2023</span>
-                    <span class="project-tag">UI/UX Design</span>
-                </div>
-                <h3 class="project-title">台北通 TaipeiPASS</h3>
-                <p class="project-description">
-                    台北市政府官方的市民服務 App 與官網。在既有設計系統的框架下，負責新功能的 UI/UX 設計，並跨多個外包開發商進行設計品質把關。
-                </p>
-                <div class="project-highlights">
-                    <h4>Key Highlights</h4>
-                    <ul>
-                        <li>以「使用者行為」為軸心重整設計準則</li>
-                        <li>提供外部廠商設計指導並進行品質審查</li>
-                        <li>以資深設計師身份，從畫面提案到向高層簡報一手包辦</li>
-                    </ul>
-                </div>
-                <div class="project-footer">
-                    <span class="view-details-btn">查看詳情<span class="arrow">→</span></span>
-                </div>
-            </div>
-        </a>
-
-        <!-- Project 4: Eslite -->
-        <a href="eslite-tw.html" class="project-card">
-            <div class="project-image">
-                <img src="images/top3.png" alt="誠品線上">
-            </div>
-            <div class="project-content">
-                <div class="project-meta">
-                    <span class="project-tag">E-Commerce</span>
-                    <span class="project-tag">2018 - 2021</span>
-                    <span class="project-tag">Web Design</span>
-                </div>
-                <h3 class="project-title">誠品線上 電商網站</h3>
-                <p class="project-description">
-                    台灣知名書店品牌「誠品」電商網站改版。從以書籍為主的網路書店，轉型為涵蓋生活風格的全品類電商。網站整體方向規劃、響應式設計、結帳流程優化都在我的負責範圍內。
-                </p>
-                <div class="project-highlights">
-                    <h4>Key Highlights</h4>
-                    <ul>
-                        <li>從「書店版型」到「多品類電商架構」的 IA 重新設計</li>
-                        <li>響應式設計，提升行動版使用體驗</li>
-                        <li>結帳流程縮短至 3 步驟</li>
-                    </ul>
-                </div>
-                <div class="project-footer">
-                    <span class="view-details-btn">查看詳情<span class="arrow">→</span></span>
-                </div>
-            </div>
-        </a>
+<section class="home-capabilities" aria-label="Capabilities">
+    <div class="capability-overview">
+        <ul class="capability-list">
+            <li class="capability-item">
+                <svg class="capability-art" viewBox="0 0 80 76" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="17" y="10" width="46" height="53" rx="5"/><path d="M29 10v-2h22v9H29v-7M27 29h26M27 39h26M27 49h17"/></svg>
+                <h4>Planning</h4>
+                <p>需求整理與規劃</p>
+            </li>
+            <li class="capability-item">
+                <svg class="capability-art" viewBox="0 0 80 76" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="24" width="27" height="34" rx="4"/><rect x="49" y="24" width="22" height="34" rx="4"/><path d="M15 34h15M15 42h9M39 40h7m-4-4 4 4-4 4M52 6l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/></svg>
+                <h4>AI Prototyping</h4>
+                <p>用 AI 將線框稿轉化為原型</p>
+            </li>
+            <li class="capability-item">
+                <svg class="capability-art" viewBox="0 0 80 76" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="13" y="12" width="54" height="42" rx="5"/><path d="M13 24h54M25 24v30M32 33h25M32 41h17"/></svg>
+                <h4>UI Design</h4>
+                <p>用 Figma 設計畫面與操作</p>
+            </li>
+            <li class="capability-item">
+                <svg class="capability-art" viewBox="0 0 80 76" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="13" y="12" width="54" height="46" rx="5"/><circle cx="29" cy="27" r="5"/><path d="m15 51 16-14 11 9 10-15 13 20"/></svg>
+                <h4>Visual Design</h4>
+                <p>Photoshop・Illustrator</p>
+            </li>
+            <li class="capability-item">
+                <svg class="capability-art" viewBox="0 0 80 76" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="12" width="60" height="42" rx="5"/><path d="m31 25-9 8 9 8m18-16 9 8-9 8M44 23l-8 20M28 61h24M40 54v7"/></svg>
+                <h4>Frontend</h4>
+                <p>Vue.js・CSS 前端實作</p>
+            </li>
+            <li class="capability-item">
+                <svg class="capability-art" viewBox="0 0 80 76" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="16" width="25" height="36" rx="4"/><rect x="48" y="16" width="25" height="36" rx="4"/><path d="M33 28h15m-5-5 5 5-5 5M48 42H33m5-5-5 5 5 5M15 25h10M56 25h9M56 33h9M56 41h9"/></svg>
+                <h4>Backend Collaboration</h4>
+                <p>後端規格溝通與串接協作</p>
+            </li>
+            <li class="capability-item">
+                <svg class="capability-art" viewBox="0 0 80 76" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="12" width="60" height="43" rx="5"/><path d="M10 23h60M29 36a13 13 0 0 1 22-2l3 4m0-9v9h-9M51 44a13 13 0 0 1-22 2l-3-4m0 9v-9h9"/></svg>
+                <h4>Site Maintenance</h4>
+                <p>網站更新與維護</p>
+            </li>
+        </ul>
     </div>
 </section>
 
-<!-- Landing Pages Section -->
-<section class="lp-section">
-    <div class="section-header">
-        <div class="section-title">Selected Landing Pages & Visuals</div>
-        <p class="section-subtitle">服務與促銷活動的 Landing Pages、Banner 與插畫</p>
+<!-- Featured Projects: scroll-driven preview -->
+
+<section id="projects" class="scroll-projects" aria-label="Selected projects">
+
+    <div class="scroll-projects-layout"><div class="scroll-work-stories"><article class="scroll-work" aria-labelledby="work-title-0">
+        <a class="scroll-mobile-image" href="netkorea-tw.html"><img src="images/top-n.png" alt="NetKOREA 韓語學習平台" loading="lazy"></a>
+        <div class="scroll-work-details"><p class="scroll-work-role">UI/UX Design + Frontend</p><p class="scroll-work-meta"><span>2026</span></p></div>
+        <h3 id="work-title-0">NetKOREA</h3>
+        <p class="scroll-work-subtitle">韓語學習平台</p>
+        <p class="scroll-work-description">沿用 BizCHINA 的共用基礎，針對韓語學習服務重新設計介面。從服務介紹、教師搜尋與預約，到學員中心，設計一致的使用體驗，並已完成改版上線。</p>
+        <a class="scroll-work-link" href="netkorea-tw.html">查看專案 <span aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-5-5 5 5-5 5"/></svg></span></a>
+    </article>
+<article class="scroll-work" aria-labelledby="work-title-1">
+        <a class="scroll-mobile-image" href="bizchina-tw.html"><img src="images/top1.png" alt="BizCHINA" loading="lazy"></a>
+        <div class="scroll-work-details"><p class="scroll-work-role">Design + Frontend</p><p class="scroll-work-meta"><span>2024 – 至今</span></p></div>
+        <h3 id="work-title-1">BizCHINA</h3>
+        <p class="scroll-work-subtitle">商業中文學習平台</p>
+        <p class="scroll-work-description">
+                    在一支六人小團隊裡，UI/UX 設計到 Vue.js 實作全部自己包。因為設計和開發都在同一人手上，省去了設計審查的往返，最終成品和設計稿完全一致。
+                </p>
+        <a class="scroll-work-link" href="bizchina-tw.html">查看專案 <span aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-5-5 5 5-5 5"/></svg></span></a>
+    </article>
+<article class="scroll-work" aria-labelledby="work-title-2">
+        <a class="scroll-mobile-image" href="bizchina-houjin-tw.html"><img src="images/top4.png" alt="BizCHINA 法人教育訓練管理系統" loading="lazy"></a>
+        <div class="scroll-work-details"><p class="scroll-work-role">UI/UX Design</p><p class="scroll-work-meta"><span>2024 – 至今</span></p></div>
+        <h3 id="work-title-2">BizCHINA for Business</h3>
+        <p class="scroll-work-subtitle">法人教育訓練管理系統</p>
+        <p class="scroll-work-description">
+                    設計企業培訓的服務網站與管理功能，串連方案比較、導入諮詢、員工申請頁面建立與受訓管理的完整體驗。
+                </p>
+        <a class="scroll-work-link" href="bizchina-houjin-tw.html">查看專案 <span aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-5-5 5 5-5 5"/></svg></span></a>
+    </article>
+<article class="scroll-work" aria-labelledby="work-title-3">
+        <a class="scroll-mobile-image" href="taipeipass-tw.html"><img src="images/top2.png" alt="台北通" loading="lazy"></a>
+        <div class="scroll-work-details"><p class="scroll-work-role">UI/UX Design</p><p class="scroll-work-meta"><span>2022 – 2023</span></p></div>
+        <h3 id="work-title-3">TaipeiPASS</h3>
+        <p class="scroll-work-subtitle">台北市民服務平台</p>
+        <p class="scroll-work-description">
+                    台北市政府官方的市民服務 App 與官網。在既有設計系統的框架下，負責新功能的 UI/UX 設計，並跨多個外包開發商進行設計品質把關。
+                </p>
+        <a class="scroll-work-link" href="taipeipass-tw.html">查看專案 <span aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-5-5 5 5-5 5"/></svg></span></a>
+    </article>
+<article class="scroll-work" aria-labelledby="work-title-4">
+        <a class="scroll-mobile-image" href="eslite-tw.html"><img src="images/top3.png" alt="誠品線上" loading="lazy"></a>
+        <div class="scroll-work-details"><p class="scroll-work-role">Web Design</p><p class="scroll-work-meta"><span>2018 – 2021</span></p></div>
+        <h3 id="work-title-4">誠品線上</h3>
+        <p class="scroll-work-subtitle">生活風格電商網站</p>
+        <p class="scroll-work-description">
+                    台灣知名書店品牌「誠品」電商網站改版。從以書籍為主的網路書店，轉型為涵蓋生活風格的全品類電商。網站整體方向規劃、響應式設計、結帳流程優化都在我的負責範圍內。
+                </p>
+        <a class="scroll-work-link" href="eslite-tw.html">查看專案 <span aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-5-5 5 5-5 5"/></svg></span></a>
+    </article></div>
+    <div class="scroll-work-stage" aria-label="專案預覽"><div class="scroll-work-frame"><a href="netkorea-tw.html" class="scroll-work-visual is-active" aria-label="NetKOREA 查看專案" aria-hidden="false" tabindex="0"><img src="images/top-n.png" alt="NetKOREA 韓語學習平台" loading="eager"></a>
+<a href="bizchina-tw.html" class="scroll-work-visual" aria-label="BizCHINA 查看專案" aria-hidden="true" tabindex="-1"><img src="images/top1.png" alt="BizCHINA" loading="eager"></a>
+<a href="bizchina-houjin-tw.html" class="scroll-work-visual" aria-label="BizCHINA for Business 查看專案" aria-hidden="true" tabindex="-1"><img src="images/top4.png" alt="BizCHINA 法人教育訓練管理系統" loading="eager"></a>
+<a href="taipeipass-tw.html" class="scroll-work-visual" aria-label="TaipeiPASS 查看專案" aria-hidden="true" tabindex="-1"><img src="images/top2.png" alt="台北通" loading="eager"></a>
+<a href="eslite-tw.html" class="scroll-work-visual" aria-label="誠品線上 查看專案" aria-hidden="true" tabindex="-1"><img src="images/top3.png" alt="誠品線上" loading="eager"></a></div></div></div>
+</section>
+<script src="home.js" defer></script>
+
+<!-- Career Timeline -->
+<section id="experience" class="career-timeline" aria-labelledby="experience-title">
+    <div class="career-header">
+        <h2 id="experience-title" class="career-title">Experience</h2>
+        <p class="career-subtitle">在不同領域中，串起設計與實作。</p>
+    </div>
+    <ol class="career-list">
+        <li><span class="career-live" aria-hidden="true"></span><p class="career-date">2024.02 — 至今<span>日本</span></p><div><h3>株式会社ネットスター</h3><p class="career-role">Product Designer</p><p>負責教育平台 BizCHINA 的網站與管理介面，從法人培訓流程整理、UI/UX 設計，到前端實作與持續改善。</p><div class="career-projects"><a href="bizchina-tw.html" class="career-link">BizCHINA <span aria-hidden="true">↗</span></a> <a href="netkorea-tw.html" class="career-link">NetKOREA <span aria-hidden="true">↗</span></a> <a href="bizchina-houjin-tw.html" class="career-link">BizCHINA 法人 <span aria-hidden="true">↗</span></a></div></div></li>
+        <li><p class="career-date">2022.01 — 2023.08<span>台灣</span></p><div><h3>藍星球</h3><p class="career-role">UI/UX Designer</p><p>負責台北市官方市民服務「台北通 TaipeiPASS」的 App 與網站設計，重整設計規範，並協調多個開發團隊與外部廠商的設計品質。</p><a href="taipeipass-tw.html" class="career-link">TaipeiPASS <span aria-hidden="true">↗</span></a></div></li>
+        <li><p class="career-date">2018.04 — 2021.09<span>台灣</span></p><div><h3>誠品</h3><p class="career-role">UI/UX Designer</p><p>負責「誠品線上」電商網站與 App 設計，參與從網路書店轉型為生活風格電商的資訊架構與購物流程重整。</p><a href="eslite-tw.html" class="career-link">誠品線上 <span aria-hidden="true">↗</span></a></div></li>
+    </ol>
+    <div class="career-earlier"><p>Earlier experience</p><p>曾於台灣樂天市場、遠時數位科技製作 Landing Page、Banner 與不同產業的網站，累積視覺與網頁設計的基礎。</p></div>
+</section>
+
+<section class="lp-section" aria-labelledby="visuals-title">
+    <div class="section-header home-section-header">
+        <h2 id="visuals-title" class="home-section-title">Landing Pages & Visuals</h2>
+        <p class="home-section-description">服務與促銷活動的 Landing Pages、Banner 與插畫</p>
     </div>
 
     <div class="lp-grid">
         <!-- BizCHINA Landing Page -->
-        <div class="lp-card" onclick="openLightbox('images/lp_design_bizchina.png', 'mobile')">
+        <div class="lp-card" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" onclick="openLightbox('images/lp_design_bizchina.png', 'mobile')" title="放大圖片">
             <div class="lp-image">
+                <span class="lp-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M10.5 7.5v6m-3-3h6"/></svg></span>
                 <img src="images/ll5.png" alt="BizCHINA 中文學習" loading="lazy">
             </div>
             <div class="lp-content">
@@ -217,8 +193,9 @@
             </div>
         </div>
 
-        <div class="lp-card" onclick="openLightbox('images/l1.png')">
+        <div class="lp-card" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" onclick="openLightbox('images/l1.png')" title="放大圖片">
             <div class="lp-image">
+                <span class="lp-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M10.5 7.5v6m-3-3h6"/></svg></span>
                 <img src="images/ll1.png" alt="在書店觀察人類的人類學家">
             </div>
             <div class="lp-content">
@@ -227,8 +204,9 @@
             </div>
         </div>
 
-        <div class="lp-card" onclick="openLightbox('images/l2.png')">
+        <div class="lp-card" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" onclick="openLightbox('images/l2.png')" title="放大圖片">
             <div class="lp-image">
+                <span class="lp-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M10.5 7.5v6m-3-3h6"/></svg></span>
                 <img src="images/ll2.png" alt="對了，我們還在做音樂">
             </div>
             <div class="lp-content">
@@ -237,8 +215,9 @@
             </div>
         </div>
 
-        <div class="lp-card" onclick="openLightbox('images/l3.png')">
+        <div class="lp-card" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" onclick="openLightbox('images/l3.png')" title="放大圖片">
             <div class="lp-image">
+                <span class="lp-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M10.5 7.5v6m-3-3h6"/></svg></span>
                 <img src="images/ll3.png" alt="和電影一起迎接春天">
             </div>
             <div class="lp-content">
@@ -247,8 +226,9 @@
             </div>
         </div>
 
-        <div class="lp-card" onclick="openLightbox('images/l4.png')">
+        <div class="lp-card" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" onclick="openLightbox('images/l4.png')" title="放大圖片">
             <div class="lp-image">
+                <span class="lp-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M10.5 7.5v6m-3-3h6"/></svg></span>
                 <img src="images/ll4.png" alt="我吃，故我在">
             </div>
             <div class="lp-content">
@@ -259,8 +239,9 @@
 
 
         <!-- Banners & Illustrations -->
-        <div class="lp-card" role="button" tabindex="0" onclick="openLightbox('images/banner-illustration-cover.png', 'gallery')" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }">
+        <div class="lp-card" role="button" tabindex="0" onclick="openLightbox('images/banner-illustration-cover.png', 'gallery')" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" title="放大圖片">
             <div class="lp-image">
+                <span class="lp-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M10.5 7.5v6m-3-3h6"/></svg></span>
                 <img src="images/banner-illustration-cover.png" alt="Banner・插畫" loading="lazy" width="808" height="632">
             </div>
             <div class="lp-content">
@@ -309,6 +290,7 @@
     }
 
     function closeLightbox(e) {
+        // 只有點擊背景時才關閉，點擊圖片不關閉
         if (e && e.target.id !== 'lightbox') {
             return;
         }
@@ -316,28 +298,32 @@
         document.body.style.overflow = 'auto';
     }
 
+    // ESC 鍵關閉
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') {
             closeLightbox();
         }
     });
 
+    // 點擊背景關閉
     document.getElementById('lightbox').addEventListener('click', function(e) {
         if (e.target === this) {
             closeLightbox();
         }
     });
 
+    // 點擊關閉按鈕
     document.querySelector('.lightbox-close').addEventListener('click', function(e) {
         e.stopPropagation();
         closeLightbox();
     });
 </script>
 
+
 <!-- About Section -->
-<section id="about" class="about-section">
-    <div class="section-header">
-        <div class="section-title">About</div>
+<section id="about" class="about-section" aria-labelledby="about-title">
+    <div class="section-header home-section-header">
+        <h2 id="about-title" class="home-section-title">About</h2>
     </div>
 
     <div class="about-intro-wrapper">
@@ -349,66 +335,13 @@
             有了提案或原型，再和商業側、開發側、營運側等不同立場的人溝通、嘗試、調整。<br><br>
             透過這樣的過程，讓專案和產品一步一步往前推進。<br>
         </p>
+        <a id="contact" href="mailto:ericacat.jp@gmail.com" class="about-email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+            <span>ericacat.jp@gmail.com</span>
+        </a>
     </div>
 
-    <div class="skills-grid">
-        <div class="skill-category">
-            <span class="skill-icon">🎨</span>
-            <h4>Design</h4>
-            <ul class="skill-list">
-                <li>UI/UX Design</li>
-                <li>Product Design</li>
-                <li>Design System</li>
-                <li>Prototyping</li>
-                <li>User Research</li>
-                <li>Accessibility Design</li>
-            </ul>
-        </div>
-        <div class="skill-category">
-            <span class="skill-icon">🛠️</span>
-            <h4>Tools</h4>
-            <ul class="skill-list">
-                <li>Figma</li>
-                <li>Adobe XD</li>
-                <li>Photoshop</li>
-                <li>Illustrator</li>
-            </ul>
-        </div>
-        <div class="skill-category">
-            <span class="skill-icon">💻</span>
-            <h4>Development</h4>
-            <ul class="skill-list">
-                <li>HTML / CSS / JavaScript</li>
-                <li>Vue.js</li>
-                <li>Responsive Design</li>
-                <li>WeChat Mini Program</li>
-            </ul>
-        </div>
-        <div class="skill-category">
-            <span class="skill-icon">📊</span>
-            <h4>Experience</h4>
-            <ul class="skill-list">
-                <li>E-Commerce Design</li>
-                <li>Education Platform</li>
-                <li>Government Platform</li>
-                <li>Landing Page Design</li>
-                <li>Cross-functional Collaboration</li>
-            </ul>
-        </div>
-    </div>
-</section>
 
-<!-- Contact Section -->
-<section id="contact" class="contact-section">
-    <div class="contact-content">
-        <div class="section-title">Contact</div>
-        <div class="contact-links">
-            <a href="mailto:ericacat.jp@gmail.com" class="contact-link">
-                <span>✉️</span>
-                <span>ericacat.jp@gmail.com</span>
-            </a>
-        </div>
-    </div>
 </section>
 
 </body>

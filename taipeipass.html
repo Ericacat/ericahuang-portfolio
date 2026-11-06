@@ -6,8 +6,9 @@
 <title>台北通 TaipeiPASS - Joting Huang</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="case-study.css">
 </head>
-<body>
+<body class="case-study">
 
 <!-- Language Switcher -->
 <div class="lang-switcher">
@@ -19,36 +20,23 @@
 </div>
 
 <!-- Project Header -->
-<section class="project-header">
-    <h1 class="project-title-large">台北通 TaipeiPASS<br>市民サービスプラットフォーム</h1>
-    
-    <p class="project-intro">
-        台北市政府の公式市民サービスアプリ・Webサイト。<br>
-        複数の外部ベンダーと一緒に進める環境で、統一されたユーザー体験を実現するために、デザインガイドラインの整理から各種機能のUI/UXデザイン、品質管理まで幅広く担当しました。
-    </p>
-    
-    <div class="project-meta-grid">
-        <div class="meta-item">
-            <div class="meta-label">Role</div>
-            <div class="meta-value">UI/UXデザイナー<br>（シニアデザイナー）</div>
-        </div>
-        <div class="meta-item">
-            <div class="meta-label">Period</div>
-            <div class="meta-value">2022年 - 2023年</div>
-        </div>
-        <div class="meta-item">
-            <div class="meta-label">Company</div>
-            <div class="meta-value">藍星球科技<br>（台北市政府資訊局）</div>
-        </div>
-        <div class="meta-item">
-            <div class="meta-label">Team</div>
-            <div class="meta-value">UXチーム<br>（リーダー + 研究員 + PM + デザイナー）</div>
-        </div>
+<nav class="case-breadcrumb" aria-label="パンくずリスト"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>台北通 TaipeiPASS</span></nav>
+<section class="case-overview" aria-labelledby="case-title">
+    <figure class="case-cover"><img src="images/top2.png" alt="台北通 TaipeiPASS — 市民サービスプラットフォーム" width="1078" height="1208" fetchpriority="high"></figure>
+    <div class="case-context">
+        <header class="case-heading"><p class="case-eyebrow">UI/UX Design / Design QA</p><h1 id="case-title">台北通 TaipeiPASS</h1><p class="case-subtitle">市民サービスプラットフォーム</p><p class="case-summary">日々の暮らしと行政を、<br>ひとつの体験につなぐ。</p></header>
+        <section class="case-context-block" aria-labelledby="case-background"><p class="case-label">Background</p><h2 id="case-background">複数のチームで、一貫した市民サービスを。</h2><p>台北市政府の公式市民サービスアプリ・Webサイト。<br>
+        複数の外部ベンダーと一緒に進める環境で、統一されたユーザー体験を実現するために、デザインガイドラインの整理から各種機能のUI/UXデザイン、品質管理まで幅広く担当しました。</p></section>
+        <dl class="case-facts"><div><dt>Role</dt><dd>UI/UXデザイナー<br>（シニアデザイナー）</dd></div><div><dt>Period</dt><dd>2022年 - 2023年</dd></div><div><dt>Company</dt><dd>藍星球科技<br>（台北市政府資訊局）</dd></div><div><dt>Team</dt><dd>UXチーム<br>（リーダー + 研究員 + PM + デザイナー）</dd></div></dl>
+        <section class="case-context-block" aria-labelledby="case-role"><p class="case-label">My Contribution</p><h2 id="case-role">共通基準を整え、設計からQAまで支える。</h2><p>UXチームの一員として、PM・研究員・エンジニア・外部ベンダーと協業。デザインガイドラインの整理・更新、機能のUI/UX設計、実装後の品質確認を担当し、画面提案から関係者への説明・合意形成まで関わりました。</p><ul class="case-scope"><li>ユーザー行動を軸にしたガイドラインの整理</li><li>アプリ・Web・プロモーションサイトのUI/UX設計</li><li>外部ベンダーとの調整・デザインQA</li></ul></section>
+        <section class="case-context-block case-tools" aria-labelledby="case-tools-title"><p id="case-tools-title" class="case-label">Tools & Workflow</p><ul class="case-tool-list"><li>Figma</li><li>Adobe XD</li></ul><p>FigmaとAdobe XDを使用。ガイドラインはAdobe XDで共有し、ベンダーとの設計確認や実装後のQAの判断基準として活用しました。</p></section>
+
+        <a class="case-read-more" href="#case-story">プロジェクトの詳細へ <span aria-hidden="true">↓</span></a>
     </div>
 </section>
 
 <!-- Platform Overview -->
-<section class="content-section">
+<section id="case-story" class="content-section case-story-start">
     <div class="full-width-image">
         <img src="images/taipeipass_all.png" alt="台北通プラットフォーム概要">
     </div>
@@ -58,10 +46,10 @@
 <section class="content-section">
     <div class="section-title">Challenge</div>
     <h2>課題</h2>
-    
+
     <h3>多様な関係者との協業における統一性の確保</h3>
     <p>台北通はすべてのサービスをまとめるプラットフォームで、社内外のさまざまな関係者やベンダーと一緒に進めています。各ベンダーにはそれぞれデザイナーとエンジニアがいて、共通のデザイン基準がなければユーザー体験にバラつきが出てしまう状況でした。</p>
-    
+
     <h4>具体的な課題</h4>
     <ul>
         <li>各ベンダーが独自のデザインを実装</li>
@@ -75,7 +63,7 @@
 <section class="content-section">
     <div class="section-title">Solution</div>
     <h2>デザインガイドラインの再整理と実践</h2>
-    
+
     <div class="subsection">
         <h3>Design Guideline：複数ベンダーをつなぐ共通基盤</h3>
 
@@ -117,16 +105,16 @@
     <!-- タッチ機能サイト -->
     <div class="subsection">
         <h3>1. タッチ機能紹介サイト</h3>
-        
+
         <p>タッチ機能の特徴や使い方がひと目でわかるように、プロモーションサイトのUI/UXデザインを担当しました。</p>
-        
+
         <div class="full-width-image">
             <img src="images/c1.png" alt="タッチ機能紹介サイト">
         </div>
         <div class="full-width-image">
             <img src="images/c2.png" alt="タッチ機能紹介サイト 詳細">
         </div>
-        
+
         <h4>担当範囲</h4>
         <ul>
             <li>サイト全体のUI/UX設計</li>
@@ -138,7 +126,7 @@
     <!-- サービス機能リニューアル -->
     <div class="subsection">
         <h3>2. サービス機能リニューアル</h3>
-        
+
         <p>一部の機能画面のUIを見直して、よりスムーズで直感的なユーザー体験を目指して改善しました。</p>
 
         <div class="full-width-image">
@@ -151,7 +139,7 @@
         <div class="full-width-image">
             <img src="images/a3.png" alt="アプリ機能リニューアル 詳細">
         </div>
-        
+
         <h4>改善のポイント</h4>
         <ul>
             <li>情報階層の再構築</li>
@@ -164,16 +152,16 @@
     <!-- 防疫台北 -->
     <div class="subsection">
         <h3>3. 防疫台北（COVID-19対応サイト）</h3>
-        
+
         <p>感染拡大の時期に、セルフチェックや受診ガイドを提供するWebサイト。正確な医療情報を届けるために、セルフ診断フローや案内ページのデザインを担当しました。</p>
-        
+
         <div class="full-width-image">
             <img src="images/b1.png" alt="防疫台北サイト">
         </div>
         <div class="full-width-image">
             <img src="images/b2.png" alt="防疫台北サイト 詳細">
         </div>
-        
+
         <h4>設計のポイント</h4>
         <ul>
             <li>3つの色ブロックで情報を視覚的に分類</li>

@@ -6,8 +6,9 @@
 <title>BizCHINA 法人研修サービス・管理システム - Erica Huang</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="case-study.css">
 </head>
-<body>
+<body class="case-study">
 
 <!-- Language Switcher -->
 <div class="lang-switcher">
@@ -19,26 +20,21 @@
 </div>
 
 <!-- Project Header -->
-<section class="project-header">
-    <h1 class="project-title-large">BizCHINA<br>法人研修管理システム</h1>
+<nav class="case-breadcrumb" aria-label="パンくずリスト"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>BizCHINA</span></nav>
+<section class="case-overview" aria-labelledby="case-title">
+    <figure class="case-cover"><img src="images/top4.png" alt="BizCHINA — 法人研修管理システム" width="1078" height="1208" fetchpriority="high"></figure>
+    <div class="case-context">
+        <header class="case-heading"><p class="case-eyebrow">Product Design / UI・UX</p><h1 id="case-title">BizCHINA</h1><p class="case-subtitle">法人研修管理システム</p><p class="case-summary">導入から受講管理まで、<br>法人研修をひとつにつなぐ。</p></header>
+        <section class="case-context-block" aria-labelledby="case-background"><p class="case-label">Background</p><h2 id="case-background">研修管理の進め方を、システムに落とし込む。</h2><p>企業向け中国語研修のサービスサイトと、研修担当者向けの管理機能を設計したプロジェクト。<br>サービスの紹介・プラン比較から、申し込みページ作成・受講管理までを扱います。</p><p>BizCHINAと同じ会社・同じ6人のチームで進めた法人向けプロジェクトです。後台の中心的な課題は、担当者の手作業や個別対応に頼っていた研修管理を、継続して運用できるシステムへ置き換えることでした。</p></section>
+        <dl class="case-facts"><div><dt>Role</dt><dd>プロダクトデザイナー<br>UI・UX設計</dd></div><div><dt>Project Type</dt><dd>サービスサイト・業務システム設計<br>（公開サイト＋管理ダッシュボード）</dd></div><div><dt>Company</dt><dd>株式会社ネットスター</dd></div><div><dt>Team</dt><dd>BizCHINAと同じ6人のチーム</dd></div></dl>
+        <section class="case-context-block" aria-labelledby="case-role"><p class="case-label">My Contribution</p><h2 id="case-role">公開サイトと管理画面を、ひとつの体験に。</h2><p>法人向けサービス紹介ページの設計と、管理者向け業務フローの整理を担当。関係者と要件を確認し、操作できるプロトタイプを通して、申し込みから受講管理・証明書発行までの流れを具体化しました。</p><ul class="case-scope"><li>サービス紹介・研修プランの比較画面</li><li>申し込みページ作成とリアルタイムプレビュー</li><li>受講状況・リマインド・証明書管理</li></ul></section>
+        <section class="case-context-block case-tools" aria-labelledby="case-tools-title"><p id="case-tools-title" class="case-label">Tools & Workflow</p><ul class="case-tool-list"><li>Figma</li></ul><p>Figmaで画面と操作フローを設計。初期のプロトタイプ作成にはAIツールも補助的に活用し、関係者と仕様や操作の抜け漏れを確認しました。</p></section>
 
-    <p class="project-intro">
-        企業向け中国語研修のサービスサイトと、研修担当者向けの管理機能を設計したプロジェクト。<br>サービスの紹介・プラン比較から、申し込みページ作成・受講管理までを扱います。
-    </p>
-
-    <div class="project-meta-grid">
-        <div class="meta-item">
-            <div class="meta-label">Role</div>
-            <div class="meta-value">プロダクトデザイナー<br>UI・UX設計</div>
-        </div>
-        <div class="meta-item">
-            <div class="meta-label">Project Type</div>
-            <div class="meta-value">サービスサイト・業務システム設計<br>（公開サイト＋管理ダッシュボード）</div>
-        </div>
+        <a class="case-read-more" href="#case-story">プロジェクトの詳細へ <span aria-hidden="true">↓</span></a>
     </div>
 </section>
 
-<section class="content-section">
+<section id="case-story" class="content-section case-story-start">
 <div class="section-title">Service Website</div><h2>サービスを知り、研修プランを選ぶ公開サイト</h2><p>法人向けのサービス紹介から、研修プランの比較・導入相談までの前台画面も設計しました。研修の導入を検討する担当者が、サービスの特徴と導入方法を確認できる構成です。</p>
 <h3>法人向けサービスのトップページ</h3>
 <div class="full-width-image"><img src="images/houjin-showcase-1.png" alt="法人向けサービスのトップページ" loading="lazy" width="1920" height="10800"></div>
@@ -59,7 +55,8 @@
 <!-- Challenge -->
 <section class="content-section">
     <div class="section-title">Challenge</div>
-    <h2>課題</h2>
+    <h2>研修管理の進め方を、システムに落とし込む。</h2>
+    <p>個々の画面を整えるだけでなく、申し込み・受講状況の確認・リマインド・証明書発行までの管理方法を整理し、システム上の操作と情報の流れとして設計する必要がありました。担当者の経験に依存する運用を、誰でも追える一貫した業務フローに変えることが、法人後台の設計課題です。</p>
 
     <h3>担当者に頼りすぎる運用</h3>
     <p>研修の手配や進捗の確認がほぼすべて手作業で、担当者の頑張りに頼りきりの運用になっていました。受講者が増えれば増えるほど、そのまま担当者の負担も増えてしまう状態でした。</p>

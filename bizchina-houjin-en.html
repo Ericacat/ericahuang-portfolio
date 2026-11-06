@@ -6,8 +6,9 @@
 <title>BizCHINA Corporate Training Management Dashboard - Erica Huang</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="case-study.css">
 </head>
-<body>
+<body class="case-study">
 
 <!-- Language Switcher -->
 <div class="lang-switcher">
@@ -19,26 +20,21 @@
 </div>
 
 <!-- Project Header -->
-<section class="project-header">
-    <h1 class="project-title-large">BizCHINA<br>Corporate Training Management</h1>
+<nav class="case-breadcrumb" aria-label="Breadcrumb"><a href="index-en.html">Home</a><span aria-hidden="true">/</span><span>BizCHINA</span></nav>
+<section class="case-overview" aria-labelledby="case-title">
+    <figure class="case-cover"><img src="images/top4.png" alt="BizCHINA — Corporate Training Management" width="1078" height="1208" fetchpriority="high"></figure>
+    <div class="case-context">
+        <header class="case-heading"><p class="case-eyebrow">Product Design / UI・UX</p><h1 id="case-title">BizCHINA</h1><p class="case-subtitle">Corporate Training Management</p><p class="case-summary">Connecting corporate training,<br>from discovery to course management.</p></header>
+        <section class="case-context-block" aria-labelledby="case-background"><p class="case-label">Background</p><h2 id="case-background">Turning training management into a systematic workflow.</h2><p>I designed the corporate Chinese training website and management features for training managers.<br>The project covers service information and plan comparison through application-page creation and training management.</p><p>This corporate project was developed by the same company and six-person team as BizCHINA. The central challenge of the administration dashboard was turning training management that relied on manual work and individual follow-up into a repeatable system.</p></section>
+        <dl class="case-facts"><div><dt>Role</dt><dd>Product Designer<br>UI · UX Design</dd></div><div><dt>Project Type</dt><dd>Service Website & Business System Design<br>(Public Website + Management Dashboard)</dd></div><div><dt>Company</dt><dd>Netstar Co., Ltd.</dd></div><div><dt>Team</dt><dd>Same six-person team as BizCHINA</dd></div></dl>
+        <section class="case-context-block" aria-labelledby="case-role"><p class="case-label">My Contribution</p><h2 id="case-role">One experience across the service site and management tools.</h2><p>I designed the corporate service website and structured administrator workflows. Through requirements discussions and interactive prototypes, I clarified the journey from enrollment page creation through learning management and certificate issuance.</p><ul class="case-scope"><li>Service introduction and training plan comparison</li><li>Enrollment page builder with real-time preview</li><li>Progress tracking, reminders, and certificates</li></ul></section>
+        <section class="case-context-block case-tools" aria-labelledby="case-tools-title"><p id="case-tools-title" class="case-label">Tools & Workflow</p><ul class="case-tool-list"><li>Figma</li></ul><p>I designed interfaces and flows in Figma, using AI tools to assist early prototyping and validate missing steps and interaction details with stakeholders.</p></section>
 
-    <p class="project-intro">
-        I designed the corporate Chinese training website and management features for training managers.<br>The project covers service information and plan comparison through application-page creation and training management.
-    </p>
-
-    <div class="project-meta-grid">
-        <div class="meta-item">
-            <div class="meta-label">Role</div>
-            <div class="meta-value">Product Designer<br>UI · UX Design</div>
-        </div>
-        <div class="meta-item">
-            <div class="meta-label">Project Type</div>
-            <div class="meta-value">Service Website & Business System Design<br>(Public Website + Management Dashboard)</div>
-        </div>
+        <a class="case-read-more" href="#case-story">Explore the project <span aria-hidden="true">↓</span></a>
     </div>
 </section>
 
-<section class="content-section">
+<section id="case-story" class="content-section case-story-start">
 <div class="section-title">Service Website</div><h2>A public website for exploring corporate training</h2><p>I also designed the public-facing service website, covering service information, plan comparison and consultation. It helps training managers understand the service and how to introduce it at their company.</p>
 <h3>Corporate service homepage</h3>
 <div class="full-width-image"><img src="images/houjin-showcase-1.png" alt="Corporate service homepage" loading="lazy" width="1920" height="10800"></div>
@@ -59,7 +55,8 @@
 <!-- Challenge -->
 <section class="content-section">
     <div class="section-title">Challenge</div>
-    <h2>The Problems</h2>
+    <h2>Turning training management into a systematic workflow.</h2>
+    <p>Beyond individual screens, I needed to structure how enrollment, progress tracking, reminders, and certificates were managed, then translate those practices into system interactions and information flows. The dashboard challenge was to turn person-dependent operations into a consistent process that coordinators could follow.</p>
 
     <h3>Almost everything was done by hand</h3>
     <p>Nearly every part of the training process — from setup to tracking — was handled manually. The more corporate clients joined, the more work piled up. It wasn't a system problem you could patch; the whole workflow needed to be rethought.</p>

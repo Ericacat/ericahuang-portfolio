@@ -6,8 +6,9 @@
 <title>BizCHINA - Joting Huang</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="case-study.css">
 </head>
-<body>
+<body class="case-study">
 
 <!-- Language Switcher -->
 <div class="lang-switcher">
@@ -19,36 +20,24 @@
 </div>
 
 <!-- Project Header -->
-<section class="project-header">
-    <h1 class="project-title-large">BizCHINA<br>Learning Platform</h1>
+<nav class="case-breadcrumb" aria-label="Breadcrumb"><a href="index-en.html">Home</a><span aria-hidden="true">/</span><span>BizCHINA</span></nav>
+<section class="case-overview" aria-labelledby="case-title">
+    <figure class="case-cover"><img src="images/top1.png" alt="BizCHINA — Learning Platform" width="1078" height="1208" fetchpriority="high"></figure>
+    <div class="case-context">
+        <header class="case-heading"><p class="case-eyebrow">Design + Frontend</p><h1 id="case-title">BizCHINA</h1><p class="case-subtitle">Learning Platform</p><p class="case-summary">Connecting design and implementation<br>for a better learning experience.</p></header>
+        <section class="case-context-block" aria-labelledby="case-background"><p class="case-label">Background</p><h2 id="case-background">Rebuilding the learning experience and its foundation.</h2><p>I led the full redesign of a business Chinese learning platform — from onboarding and design system to frontend rebuild and platform integration.<br>
+        The work improved sign-up rates, reduced development costs, and built a system that could scale to new products.</p></section>
+        <dl class="case-facts"><div><dt>Role</dt><dd>Product Designer<br>UI/UX + Frontend</dd></div><div><dt>Period</dt><dd>Feb 2024 – Present</dd></div><div><dt>Company</dt><dd>Netstar Inc.</dd></div><div><dt>Team Size</dt><dd>6 people (small team)</dd></div></dl>
+        <section class="case-context-block" aria-labelledby="case-role"><p class="case-label">My Contribution</p><h2 id="case-role">Connecting design and implementation.</h2><p>In a six-person team without a dedicated frontend engineer, I worked as both product designer and frontend implementer. I collaborated with leadership and engineers, from requirements and UI/UX design through to Vue.js implementation.</p><ul class="case-scope"><li>Brand and shared UI foundations</li><li>Onboarding and enrollment flows</li><li>Responsive website and web classroom</li><li>WeChat Mini Program for teachers</li></ul></section>
+        <section class="case-context-block" aria-labelledby="case-frontend"><p class="case-label">Frontend Ownership</p><h2 id="case-frontend">Primary responsibility for frontend implementation.</h2><p>I took primary responsibility for implementing the frontend with Vue.js and HTML/CSS/JavaScript, including responsive layouts and UI refinements. Using WebStorm as my development environment, I carried the work from design through to functioning interfaces.</p></section>
+        <section class="case-context-block case-tools" aria-labelledby="case-tools-title"><p id="case-tools-title" class="case-label">Tools & Workflow</p><ul class="case-tool-list"><li>Figma</li><li>Adobe XD</li><li>Vue.js</li><li>HTML / CSS / JavaScript</li><li>uni-app</li><li>WebStorm</li></ul></section>
 
-    <p class="project-intro">
-        I led the full redesign of a business Chinese learning platform — from onboarding and design system to frontend rebuild and platform integration.<br>
-        The work improved sign-up rates, reduced development costs, and built a system that could scale to new products.
-    </p>
-
-    <div class="project-meta-grid">
-        <div class="meta-item">
-            <div class="meta-label">Role</div>
-            <div class="meta-value">Product Designer<br>UI/UX + Frontend</div>
-        </div>
-        <div class="meta-item">
-            <div class="meta-label">Period</div>
-            <div class="meta-value">Feb 2024 – Present</div>
-        </div>
-        <div class="meta-item">
-            <div class="meta-label">Company</div>
-            <div class="meta-value">Netstar Inc.</div>
-        </div>
-        <div class="meta-item">
-            <div class="meta-label">Team Size</div>
-            <div class="meta-value">6 people (small team)</div>
-        </div>
+        <a class="case-read-more" href="#case-story">Explore the project <span aria-hidden="true">↓</span></a>
     </div>
 </section>
 
 <!-- Platform Overview -->
-<section class="content-section">
+<section id="case-story" class="content-section case-story-start">
     <div class="full-width-image">
         <img src="images/bizchina_all.png">
     </div>

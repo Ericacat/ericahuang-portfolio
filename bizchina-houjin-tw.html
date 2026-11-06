@@ -6,8 +6,9 @@
 <title>BizCHINA 法人教育訓練管理系統 - 黃楉婷</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="case-study.css">
 </head>
-<body>
+<body class="case-study">
 
 <!-- Language Switcher -->
 <div class="lang-switcher">
@@ -19,26 +20,21 @@
 </div>
 
 <!-- Project Header -->
-<section class="project-header">
-    <h1 class="project-title-large">BizCHINA<br>法人教育訓練管理系統</h1>
+<nav class="case-breadcrumb" aria-label="麵包屑導覽"><a href="index-tw.html">Home</a><span aria-hidden="true">/</span><span>BizCHINA</span></nav>
+<section class="case-overview" aria-labelledby="case-title">
+    <figure class="case-cover"><img src="images/top4.png" alt="BizCHINA — 法人教育訓練管理系統" width="1078" height="1208" fetchpriority="high"></figure>
+    <div class="case-context">
+        <header class="case-heading"><p class="case-eyebrow">Product Design / UI・UX</p><h1 id="case-title">BizCHINA</h1><p class="case-subtitle">法人教育訓練管理系統</p><p class="case-summary">從導入到受訓管理，<br>串起完整的法人培訓流程。</p></header>
+        <section class="case-context-block" aria-labelledby="case-background"><p class="case-label">專案背景</p><h2 id="case-background">將既有的培訓管理方式系統化。</h2><p>設計企業中文培訓的服務網站，以及提供企業窗口使用的管理功能。<br>範圍涵蓋服務介紹、方案比較、員工申請頁面建立與受訓管理。</p><p>由與 BizCHINA 相同的公司、同一個 6 人團隊負責。法人後台的核心挑戰，是把原本仰賴人工、個別聯繫與負責人經驗的管理方式，整理成可持續運作的系統。</p></section>
+        <dl class="case-facts"><div><dt>職責</dt><dd>Product Designer<br>UI · UX Design</dd></div><div><dt>專案類型</dt><dd>服務網站與業務系統設計<br>（前台網站＋管理後台）</dd></div><div><dt>公司</dt><dd>株式会社ネットスター</dd></div><div><dt>團隊</dt><dd>與 BizCHINA 相同的 6 人團隊</dd></div></dl>
+        <section class="case-context-block" aria-labelledby="case-role"><p class="case-label">我的角色與負責範圍</p><h2 id="case-role">整合服務網站與後台管理體驗。</h2><p>負責法人服務介紹網站的設計，以及管理者工作流程的整理。透過需求討論與可操作的原型，具體確認從申請頁製作、受訓管理到證明書發放的操作流程。</p><ul class="case-scope"><li>服務介紹與培訓方案比較</li><li>申請頁編輯與即時預覽</li><li>進度追蹤、提醒與證明書管理</li></ul></section>
+        <section class="case-context-block case-tools" aria-labelledby="case-tools-title"><p id="case-tools-title" class="case-label">工具與工作方式</p><ul class="case-tool-list"><li>Figma</li></ul><p>使用 Figma 設計畫面與操作流程，初期原型也透過 AI 工具輔助，與關係人一起確認規格及操作上的遺漏。</p></section>
 
-    <p class="project-intro">
-        設計企業中文培訓的服務網站，以及提供企業窗口使用的管理功能。<br>範圍涵蓋服務介紹、方案比較、員工申請頁面建立與受訓管理。
-    </p>
-
-    <div class="project-meta-grid">
-        <div class="meta-item">
-            <div class="meta-label">職責</div>
-            <div class="meta-value">Product Designer<br>UI · UX Design</div>
-        </div>
-        <div class="meta-item">
-            <div class="meta-label">專案類型</div>
-            <div class="meta-value">服務網站與業務系統設計<br>（前台網站＋管理後台）</div>
-        </div>
+        <a class="case-read-more" href="#case-story">閱讀專案細節 <span aria-hidden="true">↓</span></a>
     </div>
 </section>
 
-<section class="content-section">
+<section id="case-story" class="content-section case-story-start">
 <div class="section-title">Service Website</div><h2>從了解服務到選擇方案的法人前台網站</h2><p>除了管理後台，也設計了法人服務介紹、研修方案比較與導入諮詢的前台頁面，讓考慮導入培訓的企業窗口能了解服務特色及導入方式。</p>
 <h3>法人服務首頁</h3>
 <div class="full-width-image"><img src="images/houjin-showcase-1.png" alt="法人服務首頁" loading="lazy" width="1920" height="10800"></div>
@@ -59,7 +55,8 @@
 <!-- Challenge -->
 <section class="content-section">
     <div class="section-title">Challenge</div>
-    <h2>遇到的問題</h2>
+    <h2>將既有的培訓管理方式系統化。</h2>
+    <p>除了介面設計，更需要釐清申請、受訓進度追蹤、提醒與證明書發放的管理方式，再轉化成系統中的操作及資訊流程。法人後台的設計重點，是把依賴個人經驗的工作，變成管理者能一致執行的流程。</p>
 
     <h3>幾乎所有流程都靠人工處理</h3>
     <p>幾乎每一個環節——從設定到追蹤——全都得人工來。法人客戶越來越多，工作量就跟著堆疊。這不是補補洞就能解決的問題，整個工作流程都需要重新設計。</p>

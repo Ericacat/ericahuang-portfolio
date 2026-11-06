@@ -8,6 +8,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home-base.css">
+<link rel="stylesheet" href="career-timeline.css">
+<link rel="stylesheet" href="home.css">
 </head>
 <body>
 
@@ -28,14 +31,14 @@
             <div class="decoration-container">
                 <img src="lamp.svg" alt="">
             </div>
-            
+
             <h1>
                 <span class="line1">DESIGN ×</span>
                 <span class="line2">FRONTEND</span>
                 <span class="line3">IMPLEMENTATION</span>
             </h1>
         </div>
-        
+
         <!-- 右側：名字 + 說明 + 數據 -->
         <div class="hero-right">
             <div class="name-section">
@@ -64,166 +67,128 @@
     </div>
 </section>
 
-<!-- Featured Projects -->
-<section id="projects" class="section">
-    <div class="section-header">
-        <div class="section-title">Featured Projects</div>
-        <p class="section-subtitle">厳選したプロジェクトをご紹介します</p>
-    </div>
-
-    <div class="projects-grid">
-        <!-- NetKOREA -->
-        <a href="netkorea.html" class="project-card">
-            <div class="project-image"><img src="images/top-n.png" alt="NetKOREA 韓国語学習プラットフォーム" loading="lazy" width="1078" height="1208"></div>
-            <div class="project-content">
-                <div class="project-meta"><span class="project-tag">Education Platform</span><span class="project-tag">2026</span><span class="project-tag">UI/UX Design</span></div>
-                <h3 class="project-title">NetKOREA 韓国語学習プラットフォーム</h3>
-                <p class="project-description">BizCHINAの共通基盤を活かし、韓国語学習サービスのUIを再設計。サービス紹介から講師検索・予約、受講者マイページまで、一貫した体験を設計。リニューアルを完了し、公開済みです。</p>
-                <div class="project-highlights">
-                    <h4>Key Highlights</h4>
-                    <ul>
-                        <li>韓国語学習サービスに合わせたビジュアルの再設計</li>
-                        <li>講師検索・予約から受講管理までのUI設計</li>
-                        <li>共通基盤を活かしたプロダクト展開</li>
-                    </ul>
-                </div>
-                <div class="project-footer"><span class="view-details-btn">詳細を見る<span class="arrow">→</span></span></div>
-            </div>
-        </a>
-
-        <!-- Project 1: BizCHINA -->
-        <a href="bizchina.html" class="project-card">
-            <div class="project-image">
-                <img src="images/top1.png" alt="BizCHINA">
-            </div>
-            <div class="project-content">
-                <div class="project-meta">
-                    <span class="project-tag">Education Platform</span>
-                    <span class="project-tag">2024 - 現在</span>
-                    <span class="project-tag">Design + Frontend</span>
-                </div>
-                <h3 class="project-title">BizCHINA 教育プラットフォーム</h3>
-                <p class="project-description">
-                    サイトが古くなったという課題に対し、6人の小規模チームでUI/UX設計からVue.js実装まで一貫して担当。設計から実装まで同じ人が対応することで設計QAの往復が不要になり、設計意図を完璧に実現できました。
-                </p>
-                <div class="project-highlights">
-                    <h4>Key Highlights</h4>
-                    <ul>
-                        <li>ブランド刷新とサイト全体の再設計</li>
-                        <li>Vue.js + uni-appによるフロントエンド実装支援</li>
-                        <li>入会フローをシンプルにしたことでCS問い合わせが大きく減少</li>
-                    </ul>
-                </div>
-                <div class="project-footer">
-                    <span class="view-details-btn">詳細を見る<span class="arrow">→</span></span>
-                </div>
-            </div>
-        </a>
-
-        <!-- Project 2: BizCHINA 法人 -->
-        <a href="bizchina-houjin.html" class="project-card">
-            <div class="project-image">
-                <img src="images/top4.png" alt="BizCHINA 法人研修管理">
-            </div>
-            <div class="project-content">
-                <div class="project-meta">
-                    <span class="project-tag">Business System</span>
-                    <span class="project-tag">2024 - 現在</span>
-                    <span class="project-tag">UI/UX Design</span>
-                </div>
-                <h3 class="project-title">BizCHINA 法人研修管理システム</h3>
-                <p class="project-description">
-                    企業向け研修のサービスサイトと管理機能を設計。研修プランの比較・導入相談から、申し込みページ作成・受講管理までをつなぐ体験を提案しました。
-                </p>
-                <div class="project-highlights">
-                    <h4>Key Highlights</h4>
-                    <ul>
-                        <li>担当者が自分で設定・公開できる申し込みページ設計</li>
-                        <li>受講状況を一目で把握できるダッシュボード設計</li>
-                        <li>通知をシステムに任せることで、心理的な負担が減る</li>
-                    </ul>
-                </div>
-                <div class="project-footer">
-                    <span class="view-details-btn">詳細を見る<span class="arrow">→</span></span>
-                </div>
-            </div>
-        </a>
-
-        <!-- Project 3: TaipeiPASS -->
-        <a href="taipeipass.html" class="project-card">
-            <div class="project-image">
-                <img src="images/top2.png" alt="台北通">
-            </div>
-            <div class="project-content">
-                <div class="project-meta">
-                    <span class="project-tag">Government Platform</span>
-                    <span class="project-tag">2022 - 2023</span>
-                    <span class="project-tag">UI/UX Design</span>
-                </div>
-                <h3 class="project-title">台北通 TaipeiPASS</h3>
-                <p class="project-description">
-                    台北市政府の公式市民サービスアプリ・Webサイトで、確立されたデザインシステムを活用しながら新機能のUI/UX設計を担当。フロントエンド技術の理解を活かし、複数の開発チーム間の調整とデザイン品質の統一に貢献しました。
-                </p>
-                <div class="project-highlights">
-                    <h4>Key Highlights</h4>
-                    <ul>
-                        <li>「ユーザー行動」軸のデザインガイドライン作り直し
-                        <li>外部ベンダーへのデザインガイダンスと品質管理
-                        <li>シニアデザイナーとして画面提案から経営層への説得まで担当
-                    </ul>
-                </div>
-                <div class="project-footer">
-                    <span class="view-details-btn">詳細を見る<span class="arrow">→</span></span>
-                </div>
-            </div>
-        </a>
-
-        <!-- Project 3: Eslite -->
-        <a href="eslite.html" class="project-card">
-            <div class="project-image">
-                <img src="images/top3.png" alt="誠品線上">
-            </div>
-            <div class="project-content">
-                <div class="project-meta">
-                    <span class="project-tag">E-Commerce</span>
-                    <span class="project-tag">2018 - 2021</span>
-                    <span class="project-tag">Web Design</span>
-                </div>
-                <h3 class="project-title">誠品線上 ECサイト</h3>
-                <p class="project-description">
-                    台湾の文化的書店ブランド「誠品」のECサイトリニューアル。
-                    書籍中心のネット書店から、ライフスタイル全般を扱うECサイトへと切り替え。
-                    サイト全体の方向性提案から、レスポンシブデザイン対応、
-                    購入フローの最適化まで幅広く担当しました。
-                </p>
-                <div class="project-highlights">
-                    <h4>Key Highlights</h4>
-                    <ul>
-                        <li>書籍中心からライフスタイルECへのIA再設計を提案</li>
-                        <li>レスポンシブデザイン対応でモバイルユーザー体験を向上</li>
-                        <li>購入フローを3ステップに最適化</li>
-                    </ul>
-                </div>
-                <div class="project-footer">
-                    <span class="view-details-btn">詳細を見る<span class="arrow">→</span></span>
-                </div>
-            </div>
-        </a>
+<section class="home-capabilities" aria-label="Capabilities">
+    <div class="capability-overview">
+        <ul class="capability-list">
+            <li class="capability-item">
+                <svg class="capability-art" viewBox="0 0 80 76" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="17" y="10" width="46" height="53" rx="5"/><path d="M29 10v-2h22v9H29v-7M27 29h26M27 39h26M27 49h17"/></svg>
+                <h4>Planning</h4>
+                <p>要件整理・企画</p>
+            </li>
+            <li class="capability-item">
+                <svg class="capability-art" viewBox="0 0 80 76" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="24" width="27" height="34" rx="4"/><rect x="49" y="24" width="22" height="34" rx="4"/><path d="M15 34h15M15 42h9M39 40h7m-4-4 4 4-4 4M52 6l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/></svg>
+                <h4>AI Prototyping</h4>
+                <p>AIでワイヤーフレームからプロトタイプへ</p>
+            </li>
+            <li class="capability-item">
+                <svg class="capability-art" viewBox="0 0 80 76" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="13" y="12" width="54" height="42" rx="5"/><path d="M13 24h54M25 24v30M32 33h25M32 41h17"/></svg>
+                <h4>UI Design</h4>
+                <p>Figmaで画面・操作を設計</p>
+            </li>
+            <li class="capability-item">
+                <svg class="capability-art" viewBox="0 0 80 76" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="13" y="12" width="54" height="46" rx="5"/><circle cx="29" cy="27" r="5"/><path d="m15 51 16-14 11 9 10-15 13 20"/></svg>
+                <h4>Visual Design</h4>
+                <p>Photoshop・Illustrator</p>
+            </li>
+            <li class="capability-item">
+                <svg class="capability-art" viewBox="0 0 80 76" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="12" width="60" height="42" rx="5"/><path d="m31 25-9 8 9 8m18-16 9 8-9 8M44 23l-8 20M28 61h24M40 54v7"/></svg>
+                <h4>Frontend</h4>
+                <p>Vue.js・CSSで実装</p>
+            </li>
+            <li class="capability-item">
+                <svg class="capability-art" viewBox="0 0 80 76" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="16" width="25" height="36" rx="4"/><rect x="48" y="16" width="25" height="36" rx="4"/><path d="M33 28h15m-5-5 5 5-5 5M48 42H33m5-5-5 5 5 5M15 25h10M56 25h9M56 33h9M56 41h9"/></svg>
+                <h4>Backend Collaboration</h4>
+                <p>バックエンドとの仕様調整・連携</p>
+            </li>
+            <li class="capability-item">
+                <svg class="capability-art" viewBox="0 0 80 76" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="12" width="60" height="43" rx="5"/><path d="M10 23h60M29 36a13 13 0 0 1 22-2l3 4m0-9v9h-9M51 44a13 13 0 0 1-22 2l-3-4m0 9v-9h9"/></svg>
+                <h4>Site Maintenance</h4>
+                <p>サイトの更新・保守</p>
+            </li>
+        </ul>
     </div>
 </section>
 
-<!-- Landing Pages Section -->
-<!-- Landing Pages Section -->
-<section class="lp-section">
-    <div class="section-header">
-        <div class="section-title">Selected Landing Pages & Visuals</div>
-        <p class="section-subtitle">サービス・販促キャンペーンのLP、バナー・イラスト</p>
+<!-- Featured Projects: scroll-driven preview -->
+
+<section id="projects" class="scroll-projects" aria-label="Selected projects">
+
+    <div class="scroll-projects-layout"><div class="scroll-work-stories"><article class="scroll-work" aria-labelledby="work-title-0">
+        <a class="scroll-mobile-image" href="netkorea.html"><img src="images/top-n.png" alt="NetKOREA 韓国語学習プラットフォーム" loading="lazy"></a>
+        <div class="scroll-work-details"><p class="scroll-work-role">UI/UX Design + Frontend</p><p class="scroll-work-meta"><span>2026</span></p></div>
+        <h3 id="work-title-0">NetKOREA</h3>
+        <p class="scroll-work-subtitle">韓国語学習プラットフォーム</p>
+        <p class="scroll-work-description">BizCHINAの共通基盤を活かし、韓国語学習サービスのUIを再設計。サービス紹介から講師検索・予約、受講者マイページまで、一貫した体験を設計。リニューアルを完了し、公開済みです。</p>
+        <a class="scroll-work-link" href="netkorea.html">詳細を見る <span aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-5-5 5 5-5 5"/></svg></span></a>
+    </article>
+<article class="scroll-work" aria-labelledby="work-title-1">
+        <a class="scroll-mobile-image" href="bizchina.html"><img src="images/top1.png" alt="BizCHINA 中国語学習プラットフォーム" loading="lazy"></a>
+        <div class="scroll-work-details"><p class="scroll-work-role">Design + Frontend</p><p class="scroll-work-meta"><span>2024 – 現在</span></p></div>
+        <h3 id="work-title-1">BizCHINA</h3>
+        <p class="scroll-work-subtitle">中国語学習プラットフォーム</p>
+        <p class="scroll-work-description">サイトが古くなったという課題に対し、6人の小規模チームでUI/UX設計からVue.js実装まで一貫して担当。設計から実装まで同じ人が対応することで設計QAの往復が不要になり、設計意図を完璧に実現できました。</p>
+        <a class="scroll-work-link" href="bizchina.html">詳細を見る <span aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-5-5 5 5-5 5"/></svg></span></a>
+    </article>
+<article class="scroll-work" aria-labelledby="work-title-2">
+        <a class="scroll-mobile-image" href="bizchina-houjin.html"><img src="images/top4.png" alt="BizCHINA for Business 法人研修管理システム" loading="lazy"></a>
+        <div class="scroll-work-details"><p class="scroll-work-role">UI/UX Design</p><p class="scroll-work-meta"><span>2024 – 現在</span></p></div>
+        <h3 id="work-title-2">BizCHINA for Business</h3>
+        <p class="scroll-work-subtitle">法人研修管理システム</p>
+        <p class="scroll-work-description">企業向け研修のサービスサイトと管理機能を設計。研修プランの比較・導入相談から、申し込みページ作成・受講管理までをつなぐ体験を提案しました。</p>
+        <a class="scroll-work-link" href="bizchina-houjin.html">詳細を見る <span aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-5-5 5 5-5 5"/></svg></span></a>
+    </article>
+<article class="scroll-work" aria-labelledby="work-title-3">
+        <a class="scroll-mobile-image" href="taipeipass.html"><img src="images/top2.png" alt="TaipeiPASS 台北市公式市民サービス" loading="lazy"></a>
+        <div class="scroll-work-details"><p class="scroll-work-role">UI/UX Design</p><p class="scroll-work-meta"><span>2022 – 2023</span></p></div>
+        <h3 id="work-title-3">TaipeiPASS</h3>
+        <p class="scroll-work-subtitle">台北市公式市民サービス</p>
+        <p class="scroll-work-description">台北市政府の公式市民サービスアプリ・Webサイトで、確立されたデザインシステムを活用しながら新機能のUI/UX設計を担当。フロントエンド技術の理解を活かし、複数の開発チーム間の調整とデザイン品質の統一に貢献しました。</p>
+        <a class="scroll-work-link" href="taipeipass.html">詳細を見る <span aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-5-5 5 5-5 5"/></svg></span></a>
+    </article>
+<article class="scroll-work" aria-labelledby="work-title-4">
+        <a class="scroll-mobile-image" href="eslite.html"><img src="images/top3.png" alt="誠品線上 ライフスタイルECサイト" loading="lazy"></a>
+        <div class="scroll-work-details"><p class="scroll-work-role">Web Design</p><p class="scroll-work-meta"><span>2018 – 2021</span></p></div>
+        <h3 id="work-title-4">誠品線上</h3>
+        <p class="scroll-work-subtitle">ライフスタイルECサイト</p>
+        <p class="scroll-work-description">台湾の文化的書店ブランド「誠品」のECサイトリニューアル。
+                    書籍中心のネット書店から、ライフスタイル全般を扱うECサイトへと切り替え。
+                    サイト全体の方向性提案から、レスポンシブデザイン対応、
+                    購入フローの最適化まで幅広く担当しました。</p>
+        <a class="scroll-work-link" href="eslite.html">詳細を見る <span aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-5-5 5 5-5 5"/></svg></span></a>
+    </article></div>
+    <div class="scroll-work-stage" aria-label="プロジェクトプレビュー"><div class="scroll-work-frame"><a href="netkorea.html" class="scroll-work-visual is-active" aria-label="NetKOREA 詳細を見る" aria-hidden="false" tabindex="0"><img src="images/top-n.png" alt="NetKOREA 韓国語学習プラットフォーム" loading="eager"></a>
+<a href="bizchina.html" class="scroll-work-visual" aria-label="BizCHINA 詳細を見る" aria-hidden="true" tabindex="-1"><img src="images/top1.png" alt="BizCHINA 中国語学習プラットフォーム" loading="eager"></a>
+<a href="bizchina-houjin.html" class="scroll-work-visual" aria-label="BizCHINA for Business 詳細を見る" aria-hidden="true" tabindex="-1"><img src="images/top4.png" alt="BizCHINA for Business 法人研修管理システム" loading="eager"></a>
+<a href="taipeipass.html" class="scroll-work-visual" aria-label="TaipeiPASS 詳細を見る" aria-hidden="true" tabindex="-1"><img src="images/top2.png" alt="TaipeiPASS 台北市公式市民サービス" loading="eager"></a>
+<a href="eslite.html" class="scroll-work-visual" aria-label="誠品線上 詳細を見る" aria-hidden="true" tabindex="-1"><img src="images/top3.png" alt="誠品線上 ライフスタイルECサイト" loading="eager"></a></div></div></div>
+</section>
+<script src="home.js" defer></script>
+
+<!-- Career Timeline -->
+<section id="experience" class="career-timeline" aria-labelledby="experience-title">
+    <div class="career-header">
+        <h2 id="experience-title" class="career-title">Experience</h2>
+        <p class="career-subtitle">領域を広げながら、設計と実装をつなぐ。</p>
+    </div>
+    <ol class="career-list">
+        <li><span class="career-live" aria-hidden="true"></span><p class="career-date">2024.02 — Present<span>Japan</span></p><div><h3>株式会社ネットスター</h3><p class="career-role">Product Designer</p><p>教育プラットフォーム「BizCHINA」のWebサイト・管理画面を設計。法人向けの業務フロー整理から、UI/UX設計、フロントエンド実装・改善まで担当しています。</p><div class="career-projects"><a href="bizchina.html" class="career-link">BizCHINA <span aria-hidden="true">↗</span></a> <a href="netkorea.html" class="career-link">NetKOREA <span aria-hidden="true">↗</span></a> <a href="bizchina-houjin.html" class="career-link">BizCHINA 法人 <span aria-hidden="true">↗</span></a></div></div></li>
+        <li><p class="career-date">2022.01 — 2023.08<span>Taiwan</span></p><div><h3>藍星球株式会社</h3><p class="career-role">UI/UX Designer</p><p>台北市の公式市民サービス「TaipeiPASS」のアプリ・Webサイトを設計。デザインガイドラインの再構築と、複数の開発チーム・外部ベンダーとの品質管理に取り組みました。</p><a href="taipeipass.html" class="career-link">TaipeiPASS <span aria-hidden="true">↗</span></a></div></li>
+        <li><p class="career-date">2018.04 — 2021.09<span>Taiwan</span></p><div><h3>誠品株式会社</h3><p class="career-role">UI/UX Designer</p><p>「誠品線上」のECサイト・アプリを設計。書籍中心からライフスタイルECへの転換において、情報設計と購入フローの再設計を推進しました。</p><a href="eslite.html" class="career-link">誠品線上 <span aria-hidden="true">↗</span></a></div></li>
+    </ol>
+    <div class="career-earlier"><p>Earlier experience</p><p>台湾楽天市場・遠時數位科技で、LP、バナー、さまざまな業界のWebサイト制作を経験。視覚表現とWebデザインの基礎を築きました。</p></div>
+</section>
+
+<section class="lp-section" aria-labelledby="visuals-title">
+    <div class="section-header home-section-header">
+        <h2 id="visuals-title" class="home-section-title">Landing Pages & Visuals</h2>
+        <p class="home-section-description">サービス・販促キャンペーンのLP、バナー・イラスト</p>
     </div>
 
     <div class="lp-grid">
         <!-- BizCHINA Landing Page -->
-        <div class="lp-card" onclick="openLightbox('images/lp_design_bizchina.png', 'mobile')">
+        <div class="lp-card" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" onclick="openLightbox('images/lp_design_bizchina.png', 'mobile')" title="画像を拡大表示">
             <div class="lp-image">
+                <span class="lp-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M10.5 7.5v6m-3-3h6"/></svg></span>
                 <img src="images/ll5.png" alt="BizCHINA 中国語学習" loading="lazy">
             </div>
             <div class="lp-content">
@@ -232,8 +197,9 @@
             </div>
         </div>
 
-        <div class="lp-card" onclick="openLightbox('images/l1.png')">
+        <div class="lp-card" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" onclick="openLightbox('images/l1.png')" title="画像を拡大表示">
             <div class="lp-image">
+                <span class="lp-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M10.5 7.5v6m-3-3h6"/></svg></span>
                 <img src="images/ll1.png" alt="本屋で人間を観察する人類学者">
             </div>
             <div class="lp-content">
@@ -242,8 +208,9 @@
             </div>
         </div>
 
-        <div class="lp-card" onclick="openLightbox('images/l2.png')">
+        <div class="lp-card" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" onclick="openLightbox('images/l2.png')" title="画像を拡大表示">
             <div class="lp-image">
+                <span class="lp-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M10.5 7.5v6m-3-3h6"/></svg></span>
                 <img src="images/ll2.png" alt="そうだ、今も僕らは音楽を作っている">
             </div>
             <div class="lp-content">
@@ -252,8 +219,9 @@
             </div>
         </div>
 
-        <div class="lp-card" onclick="openLightbox('images/l3.png')">
+        <div class="lp-card" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" onclick="openLightbox('images/l3.png')" title="画像を拡大表示">
             <div class="lp-image">
+                <span class="lp-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M10.5 7.5v6m-3-3h6"/></svg></span>
                 <img src="images/ll3.png" alt="映画とともに、春を迎える">
             </div>
             <div class="lp-content">
@@ -262,8 +230,9 @@
             </div>
         </div>
 
-        <div class="lp-card" onclick="openLightbox('images/l4.png')">
+        <div class="lp-card" role="button" tabindex="0" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" onclick="openLightbox('images/l4.png')" title="画像を拡大表示">
             <div class="lp-image">
+                <span class="lp-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M10.5 7.5v6m-3-3h6"/></svg></span>
                 <img src="images/ll4.png" alt="食べる、ゆえに我あり">
             </div>
             <div class="lp-content">
@@ -274,8 +243,9 @@
 
 
         <!-- Banners & Illustrations -->
-        <div class="lp-card" role="button" tabindex="0" onclick="openLightbox('images/banner-illustration-cover.png', 'gallery')" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }">
+        <div class="lp-card" role="button" tabindex="0" onclick="openLightbox('images/banner-illustration-cover.png', 'gallery')" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }" title="画像を拡大表示">
             <div class="lp-image">
+                <span class="lp-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M10.5 7.5v6m-3-3h6"/></svg></span>
                 <img src="images/banner-illustration-cover.png" alt="バナー・イラスト" loading="lazy" width="808" height="632">
             </div>
             <div class="lp-content">
@@ -353,12 +323,13 @@
     });
 </script>
 
+
 <!-- About Section -->
-<section id="about" class="about-section">
-    <div class="section-header">
-        <div class="section-title">About</div>
+<section id="about" class="about-section" aria-labelledby="about-title">
+    <div class="section-header home-section-header">
+        <h2 id="about-title" class="home-section-title">About</h2>
     </div>
-    
+
     <div class="about-intro-wrapper">
         <p class="about-intro">
             私がデザイナーとして大切にしているのは、言葉や頭の中にあるイメージを、画面や操作できる形に変えていくことです。<br><br>
@@ -369,64 +340,14 @@
             提案やプロトタイプをもとに、ビジネス側・開発側・運用側など、異なる立場の人と対話し、試しながら調整していく。<br><br>
             そのプロセスを通して、プロジェクトやプロダクトが少しずつ前に進む状態をつくっていきたいです。<br>
         </p>
+        <a id="contact" href="mailto:ericacat.jp@gmail.com" class="about-email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+            <span>ericacat.jp@gmail.com</span>
+        </a>
     </div>
 
-    <div class="skills-grid">
-        <div class="skill-category">
-            <span class="skill-icon">🎨</span>
-            <h4>Design</h4>
-            <ul class="skill-list">
-                <li>UI/UX Design</li>
-                <li>Product Design</li>
-                <li>Design System</li>
-                <li>Prototyping</li>
-                <li>User Research</li>
-                <li>Accessibility Design</li>
-            </ul>
-        </div>
-        <div class="skill-category">
-            <span class="skill-icon">🛠️</span>
-            <h4>Tools</h4>
-            <ul class="skill-list">
-                <li>Figma</li>
-                <li>Adobe XD</li>
-                <li>Photoshop</li>
-                <li>Illustrator</li>
-            </ul>
-        </div>
-        <div class="skill-category">
-            <span class="skill-icon">💻</span>
-            <h4>Development</h4>
-            <ul class="skill-list">
-                <li>HTML / CSS / JavaScript</li>
-                <li>Vue.js</li>
-                <li>Responsive Design</li>
-                <li>WeChat Mini Program</li>
-            </ul>
-        </div>
-        <div class="skill-category">
-            <span class="skill-icon">📊</span>
-            <h4>Experience</h4>
-            <ul class="skill-list">
-                <li>E-Commerce Design</li>
-                <li>Education Platform</li>
-                <li>Government Platform</li>
-                <li>Landing Page Design</li>
-                <li>Cross-functional Collaboration</li>
-            </ul>
-        </div>
-    </div>
+
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="contact-section">
-    <div class="contact-content">
-        <div class="section-title">Contact</div>
-        <div class="contact-links">
-            <a href="mailto:ericacat.jp@gmail.com" class="contact-link">
-                <span>✉️</span>
-                <span>ericacat.jp@gmail.com</span>
-            </a>
-        </div>
-    </div>
-</section>
+</body>
+</html>

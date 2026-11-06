@@ -6,8 +6,9 @@
 <title>BizCHINA - 黃楉婷</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="case-study.css">
 </head>
-<body>
+<body class="case-study">
 
 <!-- Language Switcher -->
 <div class="lang-switcher">
@@ -19,36 +20,24 @@
 </div>
 
 <!-- Project Header -->
-<section class="project-header">
-    <h1 class="project-title-large">BizCHINA<br>商業中文學習平台</h1>
+<nav class="case-breadcrumb" aria-label="麵包屑導覽"><a href="index-tw.html">Home</a><span aria-hidden="true">/</span><span>BizCHINA</span></nav>
+<section class="case-overview" aria-labelledby="case-title">
+    <figure class="case-cover"><img src="images/top1.png" alt="BizCHINA — 商業中文學習平台" width="1078" height="1208" fetchpriority="high"></figure>
+    <div class="case-context">
+        <header class="case-heading"><p class="case-eyebrow">Design + Frontend</p><h1 id="case-title">BizCHINA</h1><p class="case-subtitle">商業中文學習平台</p><p class="case-summary">從設計到實作，<br>打造完整的學習體驗。</p></header>
+        <section class="case-context-block" aria-labelledby="case-background"><p class="case-label">專案背景</p><h2 id="case-background">重新打造學習體驗與背後的系統。</h2><p>我主導了這個商業中文學習平台的全面改版——從新會員流程、設計系統，到前端重構與平台整合。<br>
+        這次的工作成果提升了入會轉換率、降低了開發成本，並打造出一套可延伸至新產品的基礎架構。</p></section>
+        <dl class="case-facts"><div><dt>職責</dt><dd>Product Designer<br>UI/UX + 前端實作</dd></div><div><dt>期間</dt><dd>2024年2月 – 至今</dd></div><div><dt>公司</dt><dd>Netstar Inc.</dd></div><div><dt>團隊規模</dt><dd>6人（小型團隊）</dd></div></dl>
+        <section class="case-context-block" aria-labelledby="case-role"><p class="case-label">我的角色與負責範圍</p><h2 id="case-role">串起設計與前端實作。</h2><p>在沒有專職前端工程師的 6 人團隊中，同時負責產品設計與前端實作。與經營團隊、工程師溝通，從需求整理、UI/UX 設計到 Vue.js 開發，一路參與完成。</p><ul class="case-scope"><li>品牌與共用 UI 基礎</li><li>體驗申請與入會流程</li><li>響應式網站與 Web 教室</li><li>教師用 WeChat 小程序</li></ul></section>
+        <section class="case-context-block" aria-labelledby="case-frontend"><p class="case-label">前端實作責任</p><h2 id="case-frontend">主要承擔前端實作。</h2><p>以 Vue.js、HTML/CSS/JavaScript 負責畫面實作、響應式調整與 UI 細節，使用 WebStorm 作為開發環境。從設計到可操作的介面，主要由我一路完成。</p></section>
+        <section class="case-context-block case-tools" aria-labelledby="case-tools-title"><p id="case-tools-title" class="case-label">工具與工作方式</p><ul class="case-tool-list"><li>Figma</li><li>Adobe XD</li><li>Vue.js</li><li>HTML / CSS / JavaScript</li><li>uni-app</li><li>WebStorm</li></ul></section>
 
-    <p class="project-intro">
-        我主導了這個商業中文學習平台的全面改版——從新會員流程、設計系統，到前端重構與平台整合。<br>
-        這次的工作成果提升了入會轉換率、降低了開發成本，並打造出一套可延伸至新產品的基礎架構。
-    </p>
-
-    <div class="project-meta-grid">
-        <div class="meta-item">
-            <div class="meta-label">職責</div>
-            <div class="meta-value">Product Designer<br>UI/UX + 前端實作</div>
-        </div>
-        <div class="meta-item">
-            <div class="meta-label">期間</div>
-            <div class="meta-value">2024年2月 – 至今</div>
-        </div>
-        <div class="meta-item">
-            <div class="meta-label">公司</div>
-            <div class="meta-value">Netstar Inc.</div>
-        </div>
-        <div class="meta-item">
-            <div class="meta-label">團隊規模</div>
-            <div class="meta-value">6人（小型團隊）</div>
-        </div>
+        <a class="case-read-more" href="#case-story">閱讀專案細節 <span aria-hidden="true">↓</span></a>
     </div>
 </section>
 
 <!-- Platform Overview -->
-<section class="content-section">
+<section id="case-story" class="content-section case-story-start">
     <div class="full-width-image">
         <img src="images/bizchina_all.png">
     </div>

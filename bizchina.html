@@ -6,8 +6,9 @@
 <title>BizCHINA - Joting Huang</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="case-study.css">
 </head>
-<body>
+<body class="case-study">
 
 <!-- Language Switcher -->
 <div class="lang-switcher">
@@ -18,39 +19,56 @@
     <a href="bizchina-tw.html">TW</a>
 </div>
 
-<!-- Project Header -->
-<section class="project-header">
-    <h1 class="project-title-large">BizCHINA<br>教育プラットフォーム</h1>
+<!-- Project context: pinned cover and scrolling background -->
+<nav class="case-breadcrumb" aria-label="パンくずリスト"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>BizCHINA</span></nav>
+<section class="case-overview" aria-labelledby="case-title">
+    <figure class="case-cover">
+        <img src="images/top1.png" alt="BizCHINA 中国語学習プラットフォームのデザイン" width="1078" height="1208" fetchpriority="high">
+    </figure>
+    <div class="case-context">
+        <header class="case-heading">
+            <p class="case-eyebrow">Design + Frontend</p>
+            <h1 id="case-title">BizCHINA</h1>
+            <p class="case-subtitle">教育プラットフォーム</p>
+            <p class="case-summary">デザインから実装まで、<br>学びの体験を一貫して。</p>
+        </header>
 
-    <p class="project-intro">
-        古くなった学習プラットフォームに対して、オンボーディング改善・フロントエンド再構築・業務フロー統合を含むプロダクト全体のリデザインを進めました。
-        ブランドリニューアルだけでなく、入会率の改善・メンテナンス性の向上・派生プロダクトへの展開が可能な基盤整備にもつなげました。
-    </p>
+        <section class="case-context-block" aria-labelledby="case-background">
+            <p class="case-label">Background</p>
+            <h2 id="case-background">学習体験と、その裏側をつくり直す。</h2>
+            <p>古くなった学習プラットフォームに対して、オンボーディング改善・フロントエンド再構築・業務フロー統合を含む、プロダクト全体のリデザインを進めました。</p>
+            <p>ブランドリニューアルだけでなく、入会率の改善・メンテナンス性の向上・派生プロダクトへの展開が可能な基盤整備にもつなげました。</p>
+        </section>
 
-    <div class="project-meta-grid">
-        <div class="meta-item">
-            <div class="meta-label">Role</div>
-            <div class="meta-value">プロダクトデザイナー<br>UI/UX + Frontend</div>
-        </div>
-        <div class="meta-item">
-            <div class="meta-label">Period</div>
-            <div class="meta-value">2024年2月 - 現在</div>
-        </div>
-        <div class="meta-item">
-            <div class="meta-label">Company</div>
-            <div class="meta-value">株式会社ネットスター</div>
-        </div>
-        <div class="meta-item">
-            <div class="meta-label">Team Size</div>
-            <div class="meta-value">6人（小規模チーム）</div>
-        </div>
+        <dl class="case-facts">
+            <div><dt>Company</dt><dd>株式会社ネットスター</dd></div>
+            <div><dt>Period</dt><dd>2024年2月 — 現在</dd></div>
+            <div><dt>Team</dt><dd>6人の小規模チーム</dd></div>
+            <div><dt>Role</dt><dd>プロダクトデザイナー<br>UI/UX Design + Frontend</dd></div>
+        </dl>
+
+        <section class="case-context-block" aria-labelledby="case-role">
+            <p class="case-label">My Contribution</p>
+            <h2 id="case-role">設計と実装を、ひとりでつなぐ。</h2>
+            <p>専任のフロントエンドエンジニアがいないチームで、デザイナー兼フロントエンド実装者として参加。経営層やエンジニアと対話しながら、要件整理から画面設計、Vue.jsによる実装まで一貫して担当しました。</p>
+            <ul class="case-scope">
+                <li>ブランド・共通UI基盤の整備</li>
+                <li>オンボーディング・入会フローの再設計</li>
+                <li>レスポンシブWeb・Web教室の設計と実装</li>
+                <li>講師向けWeChat小程序の設計と実装</li>
+            </ul>
+        </section>
+<section class="case-context-block" aria-labelledby="case-frontend"><p class="case-label">Frontend Ownership</p><h2 id="case-frontend">フロントエンド実装の主担当。</h2><p>Vue.jsとHTML/CSS/JavaScriptを用いて、画面の実装・レスポンシブ対応・UIの調整まで主体的に担当。WebStormを開発環境として使い、デザインから実際に動く画面まで一貫して形にしました。</p></section>
+        <section class="case-context-block case-tools" aria-labelledby="case-tools-title"><p id="case-tools-title" class="case-label">Tools & Workflow</p><ul class="case-tool-list"><li>Figma</li><li>Adobe XD</li><li>Vue.js</li><li>HTML / CSS / JavaScript</li><li>uni-app</li><li>WebStorm</li></ul></section>
+        <a class="case-read-more" href="#case-story">プロジェクトの詳細へ <span aria-hidden="true">↓</span></a>
     </div>
 </section>
 
+
 <!-- Platform Overview -->
-<section class="content-section">
+<section id="case-story" class="content-section case-platform">
     <div class="full-width-image">
-        <img src="images/bizchina_all.png">
+        <img src="images/bizchina_all.png" alt="BizCHINAのWebサイトと学習管理画面の全体像" loading="lazy">
     </div>
 </section>
 

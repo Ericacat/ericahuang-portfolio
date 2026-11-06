@@ -1,0 +1,84 @@
+/* Case study layout: a pinned introduction followed by a full-width story. */
+.case-study {
+    --color-bg: #f5f5f7;
+    --color-border: #e5e5e7;
+    --color-text: #1d1d1f;
+    --color-text-secondary: #6e6e73;
+    --color-accent: #9561c9;
+    background: #fff;
+}
+.case-breadcrumb {
+    display: flex;
+    gap: 14px;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 40px 40px 32px;
+    color: var(--color-text-secondary);
+    font: 400 13px/1.5 var(--font-en);
+}
+.case-breadcrumb a { color: inherit; text-decoration: none; }
+.case-breadcrumb a:hover { color: var(--color-text); }
+.case-overview {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 24px 40px 112px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+    gap: clamp(48px, 6vw, 96px);
+    align-items: start;
+}
+.case-cover { position: sticky; top: 48px; margin: 0; }
+.case-cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: calc(100svh - 96px);
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 24px;
+    background: var(--color-bg);
+    box-shadow: 0 4px 12px rgba(0,0,0,.03), 0 16px 40px rgba(0,0,0,.06);
+}
+.case-context { min-width: 0; }
+.case-eyebrow { font: 500 14px/1.6 var(--font-en); color: var(--color-accent); margin-bottom: 14px; }
+.case-heading h1 { font: 600 clamp(44px, 4.6vw, 68px)/1.1 var(--font-en); letter-spacing: -.04em; }
+.case-subtitle { margin-top: 12px; font-size: 17px; font-weight: 500; }
+.case-summary { font-size: clamp(21px, 2vw, 28px); line-height: 1.7; font-weight: 500; margin-top: 32px; letter-spacing: -.02em; }
+.case-context-block { margin-top: 48px; }
+.case-label, .case-facts dt { font: 500 12px/1.6 var(--font-en); color: var(--color-text-secondary); }
+.case-context-block h2 { font-size: 20px; font-weight: 500; line-height: 1.7; margin: 12px 0 18px; }
+.case-context-block p:not(.case-label) { font-size: 14px; line-height: 2; color: var(--color-text-secondary); margin-top: 14px; }
+.case-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 24px; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); padding: 32px 0; margin: 36px 0 0; }
+.case-facts dd { margin: 8px 0 0; font-size: 14px; line-height: 1.8; }
+.case-scope { list-style: none; padding: 0; margin-top: 20px; }
+.case-scope li { padding: 10px 0 10px 18px; position: relative; font-size: 14px; color: var(--color-text-secondary); }
+.case-scope li::before { content: ''; width: 4px; height: 4px; border-radius: 50%; background: var(--color-text); position: absolute; left: 0; top: 21px; }
+.case-read-more { display: inline-flex; align-items: center; gap: 28px; margin-top: 36px; font-size: 14px; color: var(--color-text); text-decoration: none; }
+.case-read-more span { font-size: 22px; }
+.case-read-more:hover { color: var(--color-accent); }
+.case-study a:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 5px; }
+.case-study .content-section { max-width: 1280px; padding: 48px 40px; }
+.case-study .content-section.case-platform { max-width: 1440px; padding-top: 0; padding-bottom: 64px; scroll-margin-top: 32px; }
+.case-study .content-section .section-title { font: 500 14px/1.5 var(--font-en); margin-bottom: 14px; color: var(--color-text-secondary); }
+.case-study .content-section h2 { font-size: clamp(28px, 3.2vw, 44px); line-height: 1.4; }
+@media (max-width: 900px) {
+    .case-breadcrumb { padding: 80px 24px 24px; }
+    .case-overview { grid-template-columns: minmax(0, 1fr); padding: 16px 24px 64px; gap: 48px; }
+    .case-cover { position: static; }
+    .case-cover img { max-height: none; max-width: 620px; margin: 0 auto; }
+    .case-heading h1 { font-size: 48px; }
+    .case-context-block { margin-top: 36px; }
+    .case-study .content-section { padding: 32px 24px; }
+    .case-study .content-section.case-platform { padding-bottom: 32px; }
+}
+@media (prefers-reduced-motion: reduce) { .case-study { scroll-behavior: auto; } }
+
+/* Shared introduction details across all projects and languages. */
+.case-heading h1 { overflow-wrap: anywhere; }
+.case-facts dd { overflow-wrap: anywhere; }
+.case-tool-list { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 14px 0 0; }
+.case-tool-list li { border-radius: 8px; padding: 7px 12px; background: var(--color-bg); font: 400 13px/1.5 var(--font-en); }
+.case-context > .highlight-box { margin-top: 28px; font-size: 14px; }
+.case-study .content-section.case-story-start { scroll-margin-top: 32px; }
+.case-study[lang="zh-TW"], html[lang="zh-TW"] .case-study { --font-jp: 'Noto Sans TC', sans-serif; }
+.case-cover:has(img[src="images/top3.png"]) img { object-position: center; }
